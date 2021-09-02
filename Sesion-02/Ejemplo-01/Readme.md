@@ -1,7 +1,8 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Simulador y sus limitaciones
+## Ejemplo-01: Creando un proyecto con UIKit - AppDelegate, Switf y Storyboards.
+
 
 ### OBJETIVO
 
@@ -32,3 +33,4 @@ Abrimos la `Terminal` de macOS y tecleamos lo siguiente:
 > xcrun simctl openurl booted https://bedu.mx
 
 ![](3.gif)
+

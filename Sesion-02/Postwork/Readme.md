@@ -2,57 +2,75 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Simulador y Terminal
+## Creación de Proyectos y Playgrounds
 
 ### OBJETIVO
 
-- Aprender el uso del Simulador y la Terminal en Mac OS.
+- Hacer que el alumno esté más familiarizado con el uso de Xcode en la creación de proyectos de iOS.
+- Familiarizarse con el uso de Playgrounds. 
+- Conocer cómo Xcode puede aumentar sus funcionalidades usando plugins de terceros.
+
 
 #### REQUISITOS
 
-1. Xcode, iOS Simulator y Terminal.
+1. Xcode 12.5.1, iOS Simulator y Terminal.
+
 
 #### DESARROLLO
 
-Abrir la Terminal de macOS y realizar lo siguiente.
+Tal como lo hicimos durante el Work, debes asegurarte de completar lo siguiente:
 
-1.- Mostrar todos los simuladores creados.
+Esta actividad consistirá en tres partes, creación y ejecución de proyectos, uso de Playgrounds e instalación de un plugin de terceros en Xcode.  Este último podría ser un poco complicado, no te preocupes si al primer intento no funciona, la idea de esto es perder el miedo al uso de Xcode.
 
-2.- Ejecutar simulador desde la terminal.
+### Creación de proyectos.
 
-3.- Grabar video del simulador.
+De los proyectos creados en clase, anotar las diferencias de cada configuración.  Incluir que versión de iOS es compatible y requerimientos.
 
-4.- Tomar screenshot del simulador.
+- Interface: Storyboard, Life Cycle UIKit
+	- Language: Swift
+	- Language: Objective-C
 
-5.- Abrir una URL del simulador.
+- Interface: Storyboard, Life Cycle SwiftUI
+	- Language: Swift
+	- Language: Objective-C
 
-6.- Mostrar todos los comandos disponibles del simulador en la terminal.
+- Interface: SwiftUI App, Life Cycle SwiftUI
 
 
-<details>
-        <summary>Solución</summary>
-        1.- Mostrar todos los simuladores creados.
+#### Crear un proyecto que omita el uso de Storyboards..
 
-2.- Ejecutar simulador desde la terminal.
+Crear la App basandose en la sig. configuración:
 
-open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/
+- Interface: Storyboard, Life Cycle UIKit.	
+	- Language: Swift
+	
+	- Debe de omitir el uso de storyboards. 
 
-3.- Grabar video del simulador.
 
-xcrun simctl io booted recordVideo — type=mp4 ./test.mp4
 
-4.- Tomar screenshot del simulador.
+#### Playgrounds
 
-xcrun simctl io booted screenshot ./screen.png
+Ahora, ¿Recuerdas que Xcode provee de 4 plantillas para la creación de un Playground?. Esta vez crearemos un playground de Mapas.
+En el código agregaremos la ubicación en coordenadas de nuestra ciudad preferida.
+También mostraremos este mapa de múltiples formas, con vista satelital o vista por default.
 
-5.- Abrir una URL del simulador.
+![](playgrounds.png)
 
-xcrun simctl openurl booted https://google.com
 
-6.- Mostrar todos los comandos disponibles del simulador en la terminal.
+#### Plugins de terceros (EXTRA)
 
-xcrun simctl help
+Vamos a integrar un plugin muy utilizado en el mundo del desarrollo de Apps, hablamos de SwiftLint. Este plugin se encarga de ver que tan bueno es tu código en Swift, es decir, se encarga de avisarle al desarrollador si está siguiendo buenas prácticas de programación.
+Generalidades:
 
-</details>
+1. Hay muchas formas de instalar este plugin. Te sugerimos comenzar por:
+	- Instalar HomeBrew
+	- Instalar swiftLint mediante HomeBrew
+
+2. Una vez instalado, procedemos a integrarlo en Xcode.
+
+3. Ya configurado en Xcode, en nuestra carpeta del proyecto crearemos un archivo `.YML`, este contiene las reglas que SwiftLint utilizará para evaluar tu código en Swift.
+
+Te sugerimos seguir el [siguiente tutorial](https://medium.com/developerinsider/how-to-use-swiftlint-with-xcode-to-enforce-swift-style-and-conventions-368e49e910) para lograr este objetivo.
+
 
 

@@ -2,26 +2,28 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Introducción al desarrollo Mobile (ambiente Mac OS y Swift)  
+## :wave: Sesión 1: Introducción al desarrollo móvil   
 
-### OBJETIVOS 
+### 🎯  Objetivo de la sesión:
 
-- Utilizar el IDE de trabajo Xcode, las herramientas generales, instalación y configuración. 
+Describir el ecosistema iOS, las tecnologias disponibles, prácticas, inicio del proceso de diseño y la distribución de una App.
 
 
-#### ORGANIZACION DE LA CLASE 
+### 🎯 Qué aprenderán
 
  - Generalidades de tener una cuenta como [Desarrollador de Apple](https://medium.com/doapps/crear-tu-cuenta-de-desarrollador-en-la-app-store-19776a157052).
 
  - Ambiente Xcode, Instalación,
  Generalidades de Navigator Area, Debugger and Inspector.
- 
- - Configuración de una App. Targets, Signing, Frameworks, Libraries, Deployment Info.
 
-	- [Ejemplo 01](Ejemplo-01)
+ - Introducción al desarrollo en iOS, generalidades.
  
-	- [Reto 01](Reto-01)
+ - Uso del ambiente de trabajo Xcode IDE
  
- - Archivos generales de un proyecto. ej. (Main.storyboard, Info.plist, xcdatamodeld, Assets, etc.)
+ - Herrameintas generales, instalación y configuración
 
- 	- [Postwork](Postwork)
+
+### 📂 Entregable del proyecto
+
+El experto mostará un ejemplo de aplicación similar a la que se construirá en las siguientes sesiones
+

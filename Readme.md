@@ -9,7 +9,17 @@ En este módulo aprenderemos los fundamentos básicos del lenguaje de programaci
 
 Primero deberás **descargar Xcode** en tu equipo. Solo abre el link y da click en descargar.
 
-### [Descargar Xcode desde el App Store](https://apps.apple.com/mx/app/xcode/id497799835?l=en&mt=12)
+#### Descargar Xcode desde el App Store
+
+[Descargar Xcode desde el App Store](https://apps.apple.com/mx/app/xcode/id497799835?l=en&mt=12)
+
+
+#### Descargar Xcode desde el Portal de desarrolladores
+
+[Descargar Xcode desde el portal de desarrolladores](https://developer.apple.com/download/more/)
+
+**Nota:** Dentro del portal buscar *Xcode 12.5.1*, descargar en formato *.xip*. 
+Igualmente descargar *Command_Line_Tools_for_Xcode_12.5.1.dmg*.
 
 ![](1.png)
 
@@ -20,14 +30,14 @@ Primero deberás **descargar Xcode** en tu equipo. Solo abre el link y da click 
 
 ### ORGANIZACIÓN DE MÓDULO 
  
- - [Sesión 1](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-01): Introducción al desarrollo Mobile (ambiente Macos y Swift)  
- - [Sesión 2](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-02): Swift tools (Xcode, Playgrounds y simulador Iphone)
- - [Sesión 3](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-03): Storyboard, tu primer hola mundo en Swift 
- - [Sesión 4](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-04): Estructura básica de Swift(adición y substracción, multiplicación y división, construyendo y compilando app)
+ - [Sesión 1](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-01): Introducción al desarrollo móvil 
+ - [Sesión 2](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-02): Herramientas de desarrollo en iOS 
+ - [Sesión 3](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-03): Tu primera App
+ - [Sesión 4](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-04): Estructura básica del lenguaje Swift
  - [Sesión 5](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-05): Variables y tipos de datos en Swift
- - [Sesión 6](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-06): Operadores (asignación, aritmético, incremento y decremento, compuestos, comparación, rango y lógicos)
+ - [Sesión 6](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-06): Operadores
  - [Sesión 7](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-07): Control de flujos
- - [Sesión 8](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-08): Integración básica (MVC, IBO, IBA) 
+ - [Sesión 8](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-08): Elementos de interfaz de usuario UIKit
 
 
 

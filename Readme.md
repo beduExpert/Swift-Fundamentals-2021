@@ -30,14 +30,14 @@ Igualmente descargar *Command_Line_Tools_for_Xcode_12.5.1.dmg*.
 
 ### ORGANIZACIÓN DE MÓDULO 
  
- - [Sesión 1](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-01): Introducción al desarrollo móvil 
- - [Sesión 2](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-02): Herramientas de desarrollo en iOS 
- - [Sesión 3](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-03): Tu primera App
- - [Sesión 4](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-04): Estructura básica del lenguaje Swift
- - [Sesión 5](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-05): Variables y tipos de datos en Swift
- - [Sesión 6](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-06): Operadores
- - [Sesión 7](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-07): Control de flujos
- - [Sesión 8](https://github.com/beduExpert/A1-Swift-Fundamentals/tree/master/Sesion-08): Elementos de interfaz de usuario UIKit
+ - [Sesión 1](Sesion-01): Introducción al desarrollo móvil 
+ - [Sesión 2](Sesion-02): Herramientas de desarrollo en iOS 
+ - [Sesión 3](Sesion-03): Tu primera App
+ - [Sesión 4](Sesion-04): Estructura básica del lenguaje Swift
+ - [Sesión 5](Sesion-05): Variables y tipos de datos en Swift
+ - [Sesión 6](Sesion-06): Operadores
+ - [Sesión 7](Sesion-07): Control de flujos
+ - [Sesión 8](Sesion-08): Elementos de interfaz de usuario UIKit
 
 
 

@@ -57,8 +57,6 @@ Esto es importante ya que es nuestro punto de partida, esto definirá si utiliza
 
 
 
-
-
 ### Ejemplos y Retos
 
 - Creando un proyecto con UIKit - AppDelegate, Switf y Storyboards.
@@ -77,7 +75,7 @@ Esto es importante ya que es nuestro punto de partida, esto definirá si utiliza
 
 		[Reto 02](Reto-02)
 
-- Jugando en los Playgrounds.
+- Multiples iconos de App en una sola App
 
 	[Ejemplo 03](Ejemplo-03)
   

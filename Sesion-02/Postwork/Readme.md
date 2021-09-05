@@ -10,7 +10,6 @@
 - Familiarizarse con el uso de Playgrounds. 
 - Conocer cómo Xcode puede aumentar sus funcionalidades usando plugins de terceros.
 
-
 #### REQUISITOS
 
 1. Xcode 12.5.1, iOS Simulator y Terminal.
@@ -22,19 +21,21 @@ Tal como lo hicimos durante el Work, debes asegurarte de completar lo siguiente:
 
 Esta actividad consistirá en tres partes, creación y ejecución de proyectos, uso de Playgrounds e instalación de un plugin de terceros en Xcode.  Este último podría ser un poco complicado, no te preocupes si al primer intento no funciona, la idea de esto es perder el miedo al uso de Xcode.
 
+
 ### Creación de proyectos.
 
-De los proyectos creados en clase, anotar las diferencias de cada configuración.  Incluir que versión de iOS es compatible y requerimientos.
+1.- Crear cuatro tipos diferentes de proyectos cumpliendo lo siguiente. En todos los casos cambiar el nombre de la app mediante el uso de Info.plist, tanto nombre corto como nombre largo.
 
 - Interface: Storyboard, Life Cycle UIKit
-	- Language: Swift
-	- Language: Objective-C
+		Language: Swift
+		Language: Objective-C
 
-- Interface: Storyboard, Life Cycle SwiftUI
-	- Language: Swift
-	- Language: Objective-C
+- Interface: SwiftUI, Life Cycle UIKit
+		Language: Swift
 
-- Interface: SwiftUI App, Life Cycle SwiftUI
+- Interface: SwiftUI, Life Cycle SwiftUI		Language: Swift
+
+2.- Crear un proyecto que omita el uso de Storyboards, este no debe hacer uso de SwiftUI. 
 
 
 #### Crear un proyecto que omita el uso de Storyboards..
@@ -51,6 +52,7 @@ Crear la App basandose en la sig. configuración:
 #### Playgrounds
 
 Ahora, ¿Recuerdas que Xcode provee de 4 plantillas para la creación de un Playground?. Esta vez crearemos un playground de Mapas.
+
 En el código agregaremos la ubicación en coordenadas de nuestra ciudad preferida.
 También mostraremos este mapa de múltiples formas, con vista satelital o vista por default.
 

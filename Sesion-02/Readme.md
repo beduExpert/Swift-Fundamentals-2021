@@ -9,7 +9,6 @@
 
 - Aprenderán las partes principales de Xcode. Utilizar los simuladores de iphone.
 
-
 ### ⚙ Configuración
 
 Software instalado:
@@ -34,18 +33,56 @@ En esta sesión aprenderemos a utilizar los componentes de Xcode así como el us
 
 ### Creando proyectos en iOS mediante Xcode
 
-Xcode ofrece diferentes maneras para poder crear proyectos, ya sea utilizando Swift, Objective-C, Swift-UI o Storyboards. Cualquiera de ellas es válida siempre y cuando satisfagan las necesidades del proyecto.
+Xcode ofrece diferentes maneras para poder crear proyectos, ya sea utilizando Swift, Objective-C, SwiftUI o Storyboards. Cualquiera de ellas es válida siempre y cuando satisfagan las necesidades del proyecto.
 
 En esta serie de cursos utilizaremos Storyboard y Swift. De manera paulatina iremos dejando de lado el Storyboard paradar paso al uso de Swift en su forma mas pura.
 
+Comenzamos...
 
+Para crear un proyecto en Xcode para iOS tenemos dos opciones, la primera al ejecutar Xcode aparece la sig. pantalla, elegimos `Create a new Xcode project`:
+
+![](images/p01.png)
+
+`File > New > Project ... ` Elegimos dentro de iOS, la opción de `App`.
+
+![](images/p0.png)
+
+Seguido de esto, se nos solicitará indicar que tipo de proyeto deseamos. Ingresamos el nombre, identificador, interfaz, ciclo de vida y lenguaje de programación que usará el proyecto.
+
+![](images/p1.gif)
+
+Al dar click en Next se mostrará el editor.
+
+Estudiemos las partes que lo componen.
+
+![](images/p2.png)
+
+Es importante ubicar estas zonas, ya que en las siguientes sesiones se hará mención de ellas para referirnos en que lugar de Xcode se encuentra cierta opción.
+
+- `Toolbar`: Aqui tenemos las opciones de ejecutar código, simulador, mostarar/ocultar paneles de Xcode, y otras opciones para editar codigo.
+- `Navigation Area`: Se enlistan los archivos pertenecientes al proyecto. De igual forma se llegan a mostrar mensajes de error, breakpoints o información relacionada a commits de git. Igualmente es muy usado para buscar código dentro de todo nuestro proyecto.
+- `Editor Area`: Simplemente es donde escribimos nuestro código o bien editamos la UI.
+- `Utility Area`: Podriamos pensar que es la zona donde encontramos las preferencias de cualquier cosa de Xcode, como las de un archivo, elemento de UI, paquete, etc. La información que podemos encontrar va desde su directorio o a que Target pertenece.
+- `Debug Area`: En esta zona encontraremos los Logs de la app, tambien podremos hacer uso de los breakpoints al momento de hacer debugging y ver sus valres aqui.
+ 
+ 
+### Creando playgrounds en Xcode
+ 
+ Xcode proporciona un editor de código que es muy útil para hacer pruebas rapidas de Swift y proyectos realmente sencillos, este es conocido como Playground.
+ 
+En Xcode vamos a `File > New > Playground...`, elegimos `Blank` y siguiente.
+ 
+ ![](images/p3.png)
+ 
+ En un Playground es donde iremos probando nuestro código de Swift win necesidad de crear un proyecto en iOS. En el Ejemplo-02 haremos uso de los Playgrounds.
+ 
 ### Conceptos y consideraciones
 
-Antes de comenzar on la creación de Apps en iOS debes saber que existen diferentes formas de crear un proyecto desde cero. Sin importar si usas o no SwiftUI, SceneDelegate o AppDelefate el proceso de ejecución de inicio de una App es el mismo.
+Antes de comenzar con la creación de Apps en iOS debes saber que existen diferentes formas de crear un proyecto desde cero. Sin importar si usas o no SwiftUI, SceneDelegate o AppDelefate el proceso de ejecución de inicio de una App es el mismo.
 
 **Veamos en que consiste...**
 
-Al ejecutar una App, una secuencia de pasos complejos son ejecutados, muchos de los cuales UIKit maneja de manera automática. Durante la secuencia de lanzamiento, UIKit invoca métodos (funciones) del app delegate para que se puedan ejecutar ciertas tareas. Esto puede verse en el siguiente diagrama.
+Al ejecutar una App, una secuencia de pasos complejos son ejecutados, muchos de los cuales `UIKit` maneja de manera automática. Durante la secuencia de lanzamiento, `UIKit` invoca métodos (funciones) del app delegate para que se puedan ejecutar ciertas tareas. Esto puede verse en el siguiente diagrama.
 
 Ver mas [About the App Launch Sequence](https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence).
 
@@ -179,28 +216,34 @@ ContentView es la capa de código de SwiftUI, esta posee un previsualizador.
 
 
 
+
 ### Ejemplos y Retos
 
-- Creando un proyecto con UIKit - AppDelegate, Switf y Storyboards.
+
+- Ejemplo-01: Uso del Simulador
 
 	[Ejemplo 01](Ejemplo-01)
 
+- Ejemplo-02: Jugando en los Playgrounds
+
+	[Ejemplo 02](Ejemplo-02)
+
+- Ejemplo-03: Creando un proyecto con UIKit - AppDelegate, Switf y Storyboards.
+
+	[Ejemplo 03](Ejemplo-03)
+ 
 - Reto-01. Crear un proyecto con UIKit - AppDelegate, con un Storyboard adicional.
 
 	[Reto 01](Reto-01)
-
-- Creando un proyecto con multiples Scenes.
-
-	[Ejemplo 02](Ejemplo-02)
 
 - Reto-02. Crear un proyecto sin utilizar Storyboard. 
 
 	[Reto 02](Reto-02)
 
-- Multiples iconos de App en una sola App
+- Reto-03. Crear un proyecto sin utilizar Storyboard y con AppDelegate
 
-	[Ejemplo 03](Ejemplo-03)
-  
+	[Reto 03](Reto-03)
+   
 
 ### Postwork
 

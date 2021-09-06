@@ -1,73 +1,56 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Jugando en los Playgrounds
+## Ejemplo-03: Creando un proyecto con UIKit - AppDelegate, Switf y Storyboards.
 
 ### OBJETIVO
 
-- Aprender a utilizar los Playgrounds y el uso de la función `print()`.
+- Aprender a crear un proyecto base en Xcode.
 
 #### REQUISITOS
 
-1. Xcode 12.5.1
+1. Xcode 12.5.1.
 
 
 #### DESARROLLO
 
-1.- Abrir **Xcode** y crear un nuevo proyecto en **Playgrounds** como *Blank* template.
+1.- Abrir **Xcode** y crear un nuevo proyecto en 
 
-2.- Borraremos el código por default y escribiremos el nuestro. Mostraremos en la consola un mensaje utilizando la función `print()`.
+Para crear un proyecto en Xcode para iOS tenemos dos opciones, la primera al ejecutar Xcode aparece la sig. pantalla, elegimos `Create a new Xcode project`:
 
-> print("Hello, World!")
+![](p01.png)
 
-3.- Probemos ingresando un nuevo mensaje.
+La segunda manera es yendo al menú `File > New > Project ... ` y elegimos dentro de iOS, la opción de `App`.
 
-> print("Mi nombre es Ricardo")
+![](p0.png)
 
-4.- Ahora, guardemos nuestro nombre en una variable.
+Seguido de esto, se nos solicitará indicar que tipo de proyeto deseamos. Ingresamos el nombre, identificador, interfaz, ciclo de vida y lenguaje de programación que usará el proyecto.
 
-> var myName = "Ricardo"
+![](p1.gif)
 
-5.- Imprimamos en consola este nombre.
+Al dar click en Next se mostrará el editor.
 
-> print(myName)
+¡Y vemos el proyecto creado!
 
-6.- Leer el valor de la variable dentro de la función `print()`.
+![](p2.png)
 
-> print("Mi nombre es \(myName)")
+Ahora haremos algunas modificaciones a la configuración para usar únicamente `AppDelegate`. Primero, eliminamos los archivos de SceneDelegate, lo seleccionamos, presionamos `Delete` en el teclado y damos click en `Move to trash`.
 
-7.- Probrar con un valor númerico:
+ ![](p3.png)
+ 
+ Ahora, vamos al archivo `Info.plist`, aqui buscamos el valor `Application Scene Manifest` y lo eliminamos.
+ 
+![](p4.png)
 
-> print(28)
-
-
-8.- Saltos de Línea, `\n`.
-
-> print("H \nO \nL \nA")
-
-9.- Imprimir sin salto de línea.
-
-```
-print("H", terminator: "")
-print("O", terminator: "")
-print("L", terminator: "")
-print("A", terminator: "")
-```
-
-10.- Imprimir con un carácter como separador.
-
-> print("Hello, World!", 2020, "See you soon", separator: ". ")
-
-
-11.- Imprimir en múltiples líneas.
-
-> print("Hello, \rWorld!")
-
-12.- Alternativa, triples comillas.
-
-```
-print("""
-Hello,
-World!
-""")
-```
+ Bien, es momento de agregar algo de contenido a nuestro Storyboard, abrimos Main.storyboard y arrastramos un Label a la pantalla.
+ 
+ ![](p5.png)
+ 
+ Por último, en el archivo de AppDelegate.swift, borraremos el código de Scene Delegate. Solo hace falta declarar la variable window para que Xcode tenga una referencia de ventana.
+ 
+  ![](p6.png)
+ 
+ Ejecutamos el proyecto.
+ 
+Estos pasos son útiles si el proyecto a crear requiere compatibilidad con versiones viejas de iOS y no esta contemplado el uso de múltiples Scenes o ventanas en la app.
+ 

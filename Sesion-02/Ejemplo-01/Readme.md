@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Ejemplo-01: Creando un proyecto con UIKit - AppDelegate, Switf y Storyboards.
+## Ejemplo-01: Uso del Simulador
 
 
 ### OBJETIVO

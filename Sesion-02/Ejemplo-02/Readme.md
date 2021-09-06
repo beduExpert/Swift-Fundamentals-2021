@@ -1,7 +1,7 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Jugando en los Playgrounds
+## Ejemplo-02: Jugando en los Playgrounds
 
 ### OBJETIVO
 

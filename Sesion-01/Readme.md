@@ -25,5 +25,5 @@ Describir el ecosistema iOS, las tecnologias disponibles, prácticas, inicio del
 
 ### 📂 Entregable del proyecto
 
-El experto mostará un ejemplo de aplicación similar a la que se construirá en las siguientes sesiones
+El experto mostará un ejemplo de aplicación similar a la que se construirá en las siguientes sesiones.
 

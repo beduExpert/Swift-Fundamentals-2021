@@ -1,34 +1,38 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
  
+## :wave: Sesión 4: Estructura básica del lenguaje Swift  
 
-## Estructura básica de Swift
-### Adición y substracción, multiplicación y división, construyendo y compilando App.
+### 🎯 Objetivo de la sesión:
 
+- Aprender la sintaxis de swift
 
-### OBJETIVOS 
+### ⚙ Configuración
 
-- A partir de esta sesión, se aprenderá la sintaxis básica de Swift, estructuras de control y de flujo. Además de la ejecución de código.
+Software instalado:
 
+- Xcode 12.5.1
+- Playgrounds 
 
-#### ORGANIZACION DE LA CLASE 
+### 🎯 Qué aprenderán
 
-Antes de comenzar es prudente acercarse a una lectura previa de los temas que se irán desarrollando a lo largo del curso.
+- Jerarquía de operaciones
+- Tipos de datos y operaciónes con tipos de datos
+- Constantse y variables
+- Colecciones
+- Funciones
 
+### 🎩 Desarrollo
 
 #### Temas teóricos, artículos varios.
 
 ##### Teoría:
 
--  Tipos de datos.
-
--  Constantes y Variables.
-
--  Colecciones.
-
--  Estructuras de control y flujo.
-
--  Operadores, asignación, incremento, comparación, compuertas lógicas.
+- Jerarquía de operaciones
+- Tipos de datos y operaciónes con tipos de datos
+- Constantse y variables
+- Colecciones
+- Funciones
 
 ##### Práctica:
 

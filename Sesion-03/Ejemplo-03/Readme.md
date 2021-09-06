@@ -1,32 +1,32 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Navigation, flujo entre dos vistas
+## Agregando una segunda vista
 
 ### OBJETIVO
 
-- Aprender como conectar dos vistas en el Storyboard y como ir de la vista raiz (root) a la segunda vista.
+- Ya se conoce como ir a una segunda vista mediante *Show* (push). Al finalizar este ejemplo se aprenderá una alternativa para mostrar vistas.
 
 #### REQUISITOS
 
 1.- Crea un proyecto en Xcode como **Single View App**, con las opciones como se muestran a continuación:
 
+![](0.png)
+
+#### DESARROLLO
+
+1.- Una vez creado el proyecto, ir a Storyboard.
+
+2.- Dentro del Storyboard, agregar un nuevo ViewController con el botón **+** ubicado en la esquina superior derecha del editor.
+
 ![](1.png)
 
-2.- Abrir el Storyboard, y agregar un ViewController adicional.
+3.- Agregar un UIButton a la primera vista.
 
-![](2.gif)
-
-3.- Al Primer ViewController agregar un UIButton.
+![](2.png)
+ 
+4.- Conectar el UIButton con la segunda vista con **Present Modally**.
 
 ![](3.gif)
 
-4.- Conectar el UIButton como Push.
-
-![](4.gif)
-
-5.- Configurar el flujo como Navigation. Ir a menú `Editor > Embed In > Navigation Controller`
-
-![](5.gif)
-
-6.- Ejecutar la App.
+5.- Ejecutar la App.

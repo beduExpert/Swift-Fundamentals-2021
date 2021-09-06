@@ -192,26 +192,30 @@ En los siguientes ejemplos cubriremos los siguietes temas:
 
 ### Ejemplos y Retos
 
-- Crear una vista agregando elementos de UI.
+- Ejemplo-01: Crear una vista agregando elementos de UI haciendo uso de constraints.
 
 	[Ejemplo 01](Ejemplo-01)
 
-	- Reto-01. Crear multiples vistas con elementos de UI
+- Reto-01. Crear multiples vistas con elementos de UI
 
-		[Reto 01](Reto-01)
+	[Reto 01](Reto-01)
 
-- Creando un proyecto con UIKit - AppDelegate, Swift y SwiftUI.
+- Ejemplo-02: Creando un flujo de navegación simple. Flujo entre dos vistas.
 
 	[Ejemplo 02](Ejemplo-02)
+	
+- Reto-02. Ampliar el flujo de navegación agregando mas botones y vistas.
 
-	- Reto-02. Crear un proyecto con SwiftUI y su propio ciclo de vida.
+	[Reto 02](Reto-02)
 
-		[Reto 02](Reto-02)
-
-- Jugando en los Playgrounds.
+- Ejemplo-03: Presentar vistas Modales.
 
 	[Ejemplo 03](Ejemplo-03)
   
+- Reto-03. Agregando mas vistas modales y botón de dismiss.
+
+	[Reto 03](Reto-03)
+
   
 ### One more thing
 

@@ -2,32 +2,44 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Personalización de Vistas mediante el Inspector
+## Ejemplo-01: Crear una vista agregando elementos de UI haciendo uso de constraints
 
 ### OBJETIVO
 
-- Familizarizarse con los objetos de UIKit y el Inspector de Storyboard.
+- Agregar mas elementos de UI a tu vista de storyboard.
 
 #### DESARROLLO
 
-1.- Crear un nuevo proyecto `Single View App` en Xcode, con Swift y Storyboard.
+1.- Crear un nuevo proyecto con el nombre `LoginApp`. Este proyecto usará Storyboards, UIKit y Swift.
 
-Nos dirigimos al Storyboard y vemos una pantalla similar a esta:
+2.- Nos dirigimos al Storyboard.
 
-<img src="3.png" alt="Solucion" width="630" height="380">
+![](1.png)
 
-En la esquina superior derecha, selecionamos el botón de Library **+**. Con él podemos elegir elementos de UI, buscaremos `Label` y lo arrastraremos a la pantalla.
+3.- Agregamos los elementos tipicos de una vista de Login. No olvides personalizarlos.
 
-<img src="2.png" alt="Solucion" width="380" height="380">
+![](2.png)
 
-<img src="4.png" alt="Solucion" width="630" height="380">
+4.- Una vez acomodados los elementos, asignamos los constraints. Podemos usar los menus inferiores dedicados a esto o mediante control + click.
 
-En la misma esquina derecha, observamos los botones de *Panels*.
+Comenzamos con el Label de Login, damos un espacio Top y una alineación respecto al Centro de la pantalla. 
 
-El primer panel es el Navigator en donde tenemos nuestros archivos de Swift. El panel del centro es el Debugger en donde podemos ver nuestra consola de Xcode y en el panel de la derecha tenemos el Inspector.
+![](3.gif)
 
-<img src="5.png" alt="Solucion" width="520" height="150">
+Posteriormente e asignamos un ancho y alto (width y height).
 
-Ahora, teniendo el Label en pantalla y el Inspector, buscamos la opcion *Attributes Inspector*. Dentro de esta opción podemos cambiar el Texto, Color, Tipo de Letra, Alineación del Texto, etc.
+![](4.gif)
 
-<img src="6.png" alt="Solucion" width="530" height="305">
+Continuamos con el Label con la leyenda "Enter your email or username". Lo alineamos con el TextField y damos un espacio entre ellos.
+Este Label también tendra una distancia respecto a la izquierda y con el elemento superior. Asignamos los elementos faltantes de ancho y alto.
+
+![](5.gif)
+
+Hacemos lo mismo con el botón de Continue, lo centramos con la pantalla y damos un espacio con el elemento superior mas próximo.
+
+5.- Probamos cambiando de vistas para tener una previsualización, vemos que los elementos conservan cierta simetria al cambiar de pantalla.
+
+![](6.png)
+
+
+

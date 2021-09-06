@@ -1,28 +1,42 @@
-`Desarrollo Mobile` > `Swift Fundamentals`
+ 
 
-## Personaliza tu Primera App 
+`Desarrollo Mobile` > `Swift Fundamentals`
+	
+## Navigation, haz un flujo mas largo en tu app.
 
 ### OBJETIVO 
 
-- Personalizar mas elementos de UI e identificar sus opciones en el inspector
+- Conocer como agregar diferentes flujos a partir de diferentes vistas. La idea es crear un árbol de flujo de vistas.
 
 #### REQUISITOS 
 
-1. Proyecto de *HolaMundo* terminado (Ejemplo 02).
+1. Utilizar el proyecto de Navigation del Ejemplo-03.
 
 #### DESARROLLO
 
-1. Utilizar el proyecto de Hola Mundo.
-2. Agregar elementos del Library, se sugieren Sliders, Switch, TextFields.
-3. Personalizar estos componentes.
+1.- Abre el proyecto de *Navigation* del *Ejemplo-03*.
 
+2.- En el Storyboard agregar mas ViewControllers, los que gustes.
+
+3.- Agregar botones a estos ViewControllers.
+
+4.- Cambiar el color de fondo de cada ViewController.
+
+5.- Conectar las vistas como se desee el flujo.
+
+*TIP: Recrear un flujo parecido al siguiente*:
+
+![](1.png)
 
 <details>
-	<summary>Solucion</summary>
-	<p> Con base en el proyecto de Hola Mundo, abrir el Storyboard </p>
-	<p> En el Storyboard, ir a **Library [ + ]** y arrastrar los elementos de UI que el alumno guste. </p>
-	<p> Con el uso del Inspector, personalizar estos componentes. Intentar recrear algo parecido a esto: </p>
-	<img src="1.png" alt="Solucion" width="600"
-         height="411">
-</details> 
+        <summary>Solución</summary>
+        <p> Abrir el proyecto y dentro de Storyboard, realizar lo siguiente: </p>
+        <p> Cada ViewController se agregará mediante e*l botón de <strong>+</strong> ubicado en la esquina superior derecha, dicho botón es llamado <i>Library</i>. </p>
+        <p>Al presionar el botón <strong>+</strong>, aparecerá un menú de componentes, buscar ViewController</p>
+        <p>Al tener ViewController, arrastarlo al Storyboard.</p>
+        <p>Selecciona cada View y en el Inspector cambiar el color de fondo Busca la opción Background.</p>
+        <img src="2.png" alt="Fondo" width="320" height="507"></img>
+        <p> Conectar cada vista mediante ctrl+click en el UIButton y el View deseado.</p>
+</details>
+
 

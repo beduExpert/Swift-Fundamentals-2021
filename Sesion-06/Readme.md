@@ -1,13 +1,19 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Operadores 
+## Sesión-06: Operadores 
 
 ### Asignación, aritmético, incremento, decremento, compuestos, comparación, rango y lógicos.
 
 ### OBJETIVOS 
 
 - Aprender la lógica de programación, enfocandonos en la parte aritmética, lógica, de comparación y asignación.
+
+- Operadores
+- Incrementos y decrementos
+- Lógica booleana
+- Conversion de tipos de datos
+- Estructuras de control de flujo con uso de operadores y where
 
 #### ORGANIZACION DE LA CLASE 
 

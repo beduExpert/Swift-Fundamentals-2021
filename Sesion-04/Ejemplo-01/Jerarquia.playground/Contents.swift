@@ -17,3 +17,13 @@ let resultado7 = (15 - (8 - 5 )) * (5 + (6 - 4 )) - 3 + (8 - 6 )
 
 let resultado8 = (1 * 256) + (1 * 128) + (0 * 64) + (1 * 32) + (0 * 16) + (0 * 8) + (1 *
 4) + (1 * 2) + (1 * 1)
+
+/// Operaciones matematicas
+
+sin(45 * Double.pi / 180)
+cos(135 * Double.pi / 180)
+sqrt(9.0)
+max(5, 10)
+min(-5, -10)
+max(sqrt(9.0), Double.pi / 2)
+

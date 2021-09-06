@@ -2,11 +2,16 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Control de flujos 
+## Sesion-07: Control de flujos 
 
 ### OBJETIVOS 
 
 - Aprender el concepto de ciclo y el uso de las diferentes estructuras de control de flujo como FOR, WHILE, REPEAT-WHILE.
+
+- Estructuras de control anidadas y Switch-Case. 
+- Ciclos For, While, repeate-while.
+- Uso de Operadores, incrementos, comparaciones y condicionales.
+- Control de flujo avanzado. Uso de break, continue, where.
 
 #### ORGANIZACION DE LA CLASE 
 

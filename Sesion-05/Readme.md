@@ -42,6 +42,10 @@
 	- [Ejemplo 06](Ejemplo-06)
 	- [Reto 06](Reto-06)
 
+- Colores en una App.
+
+	-[Assets y Colores en una App](Ejemplo-07)
+
 ### Postwork:
 
 - [App Mapas con ruta](Postwork)

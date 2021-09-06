@@ -12,10 +12,6 @@
 
 1.- Crea un nuevo proyecto de Playground. Nombralo `Jerarquias`.
 
-![](0.png)
-![](1.png)
-
-
 2.- De acuerdo a la lectura de [Jerarquía de Operaciones](https://www.ditutor.com/numeros_naturales/jerarquia_operaciones.html), realizar los siguientes ejemplos en el [Playground](Jerarquia.playground).
 
 ```
@@ -39,3 +35,36 @@ print(resultado) // 7
 > 
 >  (1 * 256) + (1 * 128) + (0 * 64) + (1 * 32) + (0 * 16) + (0 * 8) + (1 *
 4) + (1 * 2) + (1 * 1)
+
+1.- De igual forma podemos hacer esto haciendo uso de funciones.
+
+2.- Calcularemos los valores de SIN, COS.
+
+```
+sin(45 * Double.pi / 180)
+cos(135 * Double.pi / 180)
+```
+
+3.- Calcularemos los valores de raiz cuadrada.
+
+```
+ sqrt(9.0)
+```
+
+4.- Obtener el valor maximo de dos números.
+
+```
+max(5, 10)
+```
+
+5.- Obtener el valor mínimo de dos números.
+
+```
+min(-5, -10)
+```
+
+6.- Combinemos funciones:
+
+```
+ max(sqrt(9.0), Double.pi / 2)
+```

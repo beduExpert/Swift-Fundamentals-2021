@@ -1,11 +1,16 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Integración básica (MVC, IBO, IBA)  
+## Sesion-08: Elementos de interfaz de usuario UIKit 
+
 
 ### OBJETIVOS 
 
 - En esta sesión se aplicarán los conceptos aprendidos de Swift, iOS y Xcode. Además de aprender la arquitectura Model-View-Controller.
+
+- Recapitulación de Optionals. Nil coalesing, optionals anidados.
+- Elementos de UI, TextFields, Switch, Buttons, Stepper, segmented control, imageView
+- Conexión entre IBOutles y IBActions.
 
 #### ORGANIZACION DE LA CLASE 
 

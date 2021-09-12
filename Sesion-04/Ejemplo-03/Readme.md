@@ -2,7 +2,7 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Assets y Colores en una App.
+## Ejemplo-03, Constantes y variables
 
 ### OBJETIVO
 

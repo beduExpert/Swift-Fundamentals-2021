@@ -246,11 +246,19 @@ Así como vimos con las variables y constantes, las colecciones pueden tener el 
 
 Son los tipos de colección mas utilizados en el mundo de la programación. Se define a un Array como un contenedor ordenado de elementos, del mismo tipo de dato.
 
-La sintaxis de un array es:
+Comenzamos definiendo si es una colección mutable o inmutable haciendo uso de `var` o `let`, seguimos asignandole un nombre y por último su valor.
+
+Entonces tenemos que la sintaxis básica de un array es la siguiente: `let/var nombre: [tipo_de_dato]`.
+
+> let arr: [Int]
+
+por ejemplo:
+
+> let arr: [Int] = [0, 1, 2, 3 ,4 , 5]
+
+o bien, 
 
 > let arr = [0, 1, 2, 3 ,4 , 5]
-
-Comenzamos definiendo si es una colección mutable o inmutable haciendo uso de `var` o `let`, seguimos asignandole un nombre y por último su valor.
 
 La numeración de un array comenzará desde la posición 0 para el primer elemento, 1 para el segundo elemento, 2 para el tercer elemento y asi sucesivamente. 
 
@@ -276,15 +284,120 @@ Otras funciones que podemos encontrar frecuentemente en un Array son:
 
 
 **Dictionaries**
+Los diccionarios son contenedores en donde para acceder a un elemento requeriremos de una llave `key`. La ventaja de esto es que esta operación es rápida.
 
+Muy similar a los Arrays, la sintaxis que seguiremos es la siguiente, `let/var nombre: [Key: Type]`.
 
+Ejemplo:
+
+![](images/18.png)
+
+En este ejemplo se observa que las llaves son los valores `A` y `B`, y sus valores `1` y `2`.
+
+Cabe mencionar que en un diccionario no existe el orden como en un Array.
+
+Para acceder a un valor del diccionario solo hace falta usar su llave, si la llave no existe entonces el valor es `nil`.
+
+![](images/19.png)
+
+Algunas operaciones comunes en los diccionarios involucran el uso de keys, values y el número de elementos que contienen.
+
+![](images/20.png)
 
 
 **Sets**
 
+Un `Set` es una colección de elementos desordenados, en donde no se podrán repetir elementos iguales. Algunos definen al Set como un diccionario donde solo se almacenan llaves, ya que en un diccionario no es posible repetir las llaves.
+
+Tanto un `Set` como un `Dictionary` son implementados con base a tablas hash y tienen un performance similar.
+
+Su sintaxis es similar a la de un array.
+
+`let values: Set = [1, 2, 3, 4, 5]`
+
+
+![](images/21.png)
 
 
 #### Funciones
+
+A lo largo de esta sesión implementamos algunas funciones predefinidas en las colecciones y tambien ejecutamos la función `print()`. 
+
+Las funciones son un bloque de código que ejecuta una tarea. Generalmente ubicamos una función debido a su sintaxis, poseen un paréntesis, `funcion()`.
+
+
+Recordando la función `print()`, esta posee nombre y paréntesis, su tarea es mostrar en pantalla valores.
+
+> print("Hello")
+
+Para definir nuestras propias funciones comenzamos por escribir la palabra reservada `func` seguida de un nombre, paréntesis y llaves.
+
+
+```
+func myFunction() {
+
+}
+```
+
+Dentro de este bloque agregaremos el código que queramos ejecutar una vez invoquemos a la función. Así como con `print()`, para ejecutar nuestra función escribimos `myFunction()`.
+
+Ejemplo:
+
+```
+func myFunction() {
+	var pigEmoji = "🐷"
+	var pig: String = "Pig " + pigEmoji
+	print(pig)
+}
+```
+
+Las funciones pueden retornar un valor una vez terminan su ejecución, por ejemplo, si el resultado de la ejecución es una cadena de tipo String utilizaremos la palabra reservada `return` la cuál indicará que el resultado es dicho valor, quien invoque a la función obtendra dicho resultado y este puede ser almacenado en una variable.
+
+La función anterior la convertiremos en una que retorne un tipo de dato, en este caso String.
+
+Con el operador flecha `->` indicamos el tipo de dato que se espera al finalizar la ejecución de la función.
+
+```
+func myFunction() -> String {
+	var pigEmoji = "🐷"
+	var pig: String = "Pig " + pigEmoji
+	return pig
+}
+```
+
+Ahora, al invocar `myFunction()` esperamos recibir un valor de tipo String, este puede ser almacenado en una variable.
+
+```
+var myPig = myFunction()
+```
+
+Una función puede recibir valores, estos valores los llamaremos parámetros. Los parámetros son variables que ayudan a ingresar valores a la función.
+
+Haremos un cambio a la función anterior. Renombraremos la función y agregaremos un parámetro de tipo string.
+
+![](images/22.png)
+
+Al invocar la función Xcode nos pedirá ingresar el valor de `name`.
+
+Como una vez mencionamos, Swift permite omitir el uso de `return`. Implementemos lo siguiente en un Playground:
+
+```
+func getAge() -> Int {
+    5
+}
+
+func getName() -> String {
+  "Kevin"
+}
+```
+
+Ambas funciones te regresan un valor, la primera un número de tipo Int y la segunda función una cadena de texto de tipo String.
+
+Al ingresar ambas funciones en un `print()` podemos obtener su valor.
+
+> print("My pig name is \(getName()), it is \(getAge())")
+
+![](images/23.png)
 
 
 ##### Práctica:

@@ -1,45 +1,38 @@
-/*import UIKit
- The UIKit framework provides the required infrastructure for your iOS or tvOS apps.
- It provides the window and view architecture for implementing your interface, the event handling infrastructure for delivering Multitouch
- and other types of input to your app, and the main run loop needed to manage interactions among the user, the system, and your app. Other
- features offered by the framework include animation support, document support, drawing and printing support, information about the current
- device, text management and display, search support, accessibility support, app extension support, and resource management.
- */
-
+ 
 //*----------------------| SWIFT FUNCTIONS |----------------------*//
 
 //-----------> BASICS <-----------//
-//Swift copies the value before passing it oto the function, a behavior known as pass-by-value
+// Swift copies the value before passing it oto the function, a behavior known as pass-by-value
 // Ideally a function doesn't alter its parameters.
 func printHola() {
     print("hola")
 }
 
 
-func printHola(v:String){
+func printHola(v: String) {
     print(v)
 }
 
-func printHola(_ v:String){
+func printHola(_ v: String) {
     print(v)
 }
 printHola("hola")
 
-func printHola(v:String, i:Int){
+func printHola(v: String, i: Int){
     print("\(v) \(i)")
 }
 
-func printTwoThings(name:String, and lastName:String){
-    print("\(name) \(lastName)")
+func lovers(_ name: String, and otherName: String){
+    print("\(name) y \(otherName)")
 }
-printTwoThings(name: "richie", and: "Mota")
+lovers("Richie", and: "Helena")
 
-func multiply(number:Int, by number2:Int)->Int{
+func multiply(number: Int, by number2: Int) -> Int {
     return number * number2
 }
 multiply(number: 3, by: 5)
 
-func process(input:Int, by input2:Int, and input3:Int) -> (Int,Int) {
+func process(input: Int, by input2: Int, and input3: Int) -> (Int,Int) {
     return (3,4)
 }
 process(input: 5, by: 19, and: 22)
@@ -60,7 +53,7 @@ printHola()
 printHola(v: "hola que hace")
 printHola("hola que hace")
 printHola(v: "hola", i: 6)
-printTwoThings(name: "richie", and: "mont")
+lovers("richie", and: "mont")
 multiply(number: 8, by: 5)
 
 
@@ -92,21 +85,6 @@ func sum(numbers:Int...)->Int{
     return total
 }
 print(sum(numbers: 1,2,3,4,5,6,7,8,9,10))
-
-
-
-func name() -> String {
-  return "name"
-}
-
-func myStringFunc(n: String) {
-  print(n)
-}
-
-myStringFunc(n: name())
-
-name() //   () -> String
-
 
 
 

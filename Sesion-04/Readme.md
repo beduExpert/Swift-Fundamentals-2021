@@ -418,9 +418,6 @@ Y algo mas:
 
 #### Postwork
 
-Establecer los elementos de la vista de login de una App. 
-La app podrá ejecutarse en cualquier simulador iOS y la interfaz deberá verse similar en cada pantalla.
-
-Agregar los elemenos deseados en una vista de Login, uso básico de constraints desde el storyboard.
+Con base al postwork de la sesión 03, 
 
 - [Postwork](Postwork)

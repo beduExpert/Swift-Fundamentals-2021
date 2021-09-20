@@ -56,6 +56,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="continue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8M-CX-S24"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-1Q-73A">
                                 <rect key="frame" x="107" y="399" width="200" height="34"/>
@@ -88,6 +91,10 @@
                             <constraint firstItem="bDU-0X-75B" firstAttribute="leading" secondItem="5Nj-Xj-7IS" secondAttribute="leading" id="ytw-LL-Zt0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="Mn0-YG-dbe" id="6Eq-ab-0fi"/>
+                        <outlet property="username" destination="bDU-0X-75B" id="Dgt-57-Cy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

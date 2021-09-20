@@ -27,16 +27,17 @@ Esta actividad consistirá en tres partes, creación y ejecución de proyectos, 
 1.- Crear cuatro tipos diferentes de proyectos cumpliendo lo siguiente. En todos los casos cambiar el nombre de la app mediante el uso de Info.plist, tanto nombre corto como nombre largo.
 
 - Interface: Storyboard, Life Cycle UIKit
-		Language: Swift
-		Language: Objective-C
+	- Language: Swift
+	- Language: Objective-C
 
 - Interface: SwiftUI, Life Cycle UIKit
-		Language: Swift
+	- Language: Swift
 
-- Interface: SwiftUI, Life Cycle SwiftUI		Language: Swift
+- Interface: SwiftUI, Life Cycle SwiftUI
+	- Language: Swift
+
 
 2.- Crear un proyecto que omita el uso de Storyboards, este no debe hacer uso de SwiftUI. 
-
 
 #### Crear un proyecto que omita el uso de Storyboards..
 
@@ -46,7 +47,6 @@ Crear la App basandose en la sig. configuración:
 	- Language: Swift
 	
 	- Debe de omitir el uso de storyboards. 
-
 
 
 #### Playgrounds
@@ -62,17 +62,41 @@ También mostraremos este mapa de múltiples formas, con vista satelital o vista
 #### Plugins de terceros (EXTRA)
 
 Vamos a integrar un plugin muy utilizado en el mundo del desarrollo de Apps, hablamos de SwiftLint. Este plugin se encarga de ver que tan bueno es tu código en Swift, es decir, se encarga de avisarle al desarrollador si está siguiendo buenas prácticas de programación.
+
 Generalidades:
 
-1. Hay muchas formas de instalar este plugin. Te sugerimos comenzar por:
-	- Instalar HomeBrew
-	- Instalar swiftLint mediante HomeBrew
+Hay muchas formas de instalar este plugin. Te sugerimos comenzar por:
+1.- Instalar HomeBrew
+2.- Instalar swiftLint mediante HomeBrew.
+https://github.com/realm/SwiftLint
 
-2. Una vez instalado, procedemos a integrarlo en Xcode.
+Una vez instalado, procedemos a integrarlo en Xcode.
+Ya configurado en Xcode, en nuestra carpeta del proyecto crearemos un archivo .YML, este contiene las reglas que SwiftLint utilizará para evaluar tu código en Swift.
 
-3. Ya configurado en Xcode, en nuestra carpeta del proyecto crearemos un archivo `.YML`, este contiene las reglas que SwiftLint utilizará para evaluar tu código en Swift.
 
-Te sugerimos seguir el [siguiente tutorial](https://medium.com/developerinsider/how-to-use-swiftlint-with-xcode-to-enforce-swift-style-and-conventions-368e49e910) para lograr este objetivo.
+**Pasos a seguir: **
+
+Si contamos con HomeBrew instalado, ingresamos el siguiente comando en la Terminal.
+
+> brew install swiftlint
+
+En Xcode agregaremos un nuevo Script.
+
+Vamos a Build Phases. Click en + y seleccionar "New Run Script Phase". Ingresamos el sig. script:
+
+![](1.png)
+
+**Ejecutamos algún proyecto**
+
+
+Swift Lint tiene aún más configuraciones, te invitamos a ver el repositorio en donde encontrarás más información al respecto. 
+
+https://github.com/realm/SwiftLint
+
+Si persisten las dudas, puedes consultar la sig. fuente:
+
+https://medium.com/developerinsider/how-to-use-swiftlint-with-xcode-to-enforce-swift-style-and-conventions-368e49e910
+
 
 
 

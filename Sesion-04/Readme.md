@@ -402,22 +402,19 @@ Al ingresar ambas funciones en un `print()` podemos obtener su valor.
 
 ##### Práctica:
 
-- [Ejemplo, Jerarquía de Operaciones](Ejemplo-01)
+- [Ejemplo-01, Jerarquía de Operaciones](Ejemplo-01)
 
-- [Ejemplo, Tipos de datos y operaciónes](Ejemplo-02)
+- [Ejemplo-02, Tipos de datos y operaciónes](Ejemplo-02)
 
-- [Ejemplo, Constantse y variables](Ejemplo-03)
+- [Ejemplo-03, Constantes y variables](Ejemplo-03)
 
-- [Ejemplo, Colecciones](Ejemplo-04)
+- [Ejemplo-04, Colecciones](Ejemplo-04) 
 
-- [Ejemplo, Funciones](Ejemplo-05)
+- [Ejemplo-05, Funciones](Ejemplo-05)
 
-Y algo mas:
-
-- [Ejemplo, Colores en Apps](Ejemplo-03)
 
 #### Postwork
 
-Con base al postwork de la sesión 03, 
+Proyecto con IBOutlets y IBActions:
 
 - [Postwork](Postwork)

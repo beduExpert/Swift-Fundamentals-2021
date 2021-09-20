@@ -2,7 +2,7 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Ejemplo-02: Operaciones Matemáticas
+## Ejemplo-02: Tipos de datos y operadores
 
 ### OBJETIVO
 

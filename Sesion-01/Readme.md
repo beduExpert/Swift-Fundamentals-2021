@@ -24,10 +24,6 @@ Describir el ecosistema iOS, las tecnologias disponibles, prácticas, inicio del
  
  Entonces, comenzamos el ciclo de vida de una App desde el diseño, una vez definidas las historias de usuario, comenzamos el diseño del sistema: Etapa de desarrollo.
  
- 
- ![](images/1.png)
- 
- 
  Imaginemos que hemos alcanzado la primera versión de la App, es momento de distribuirla con los clientes, estamos ahora en la etapa de Distribución, sin embargo, antes de enviar un aversión a producción, debemos probar el producto, entonces pasamos al a fase de Pruebas (QA).
  
  En la etapa de Testing, no solo se prueba el código o la App, sino temas de negocio, como quizas algun asunto legal, de marketing, etc.
@@ -187,6 +183,11 @@ Crear un Build Configuration, especificar que dispositivo esta permitido iPhone 
 Crear un Scheme, cambiar idioma [Ejemplo 03](Ejemplo-03)
 
 Crea un Secret, crear un secret [Ejemplo 04](Ejemplo-04)
+
+
+#### Reto
+
+Configuración inicial de proyecto: [Reto 01](Reto-01)
 
 
 ### 📂 Entregable del proyecto

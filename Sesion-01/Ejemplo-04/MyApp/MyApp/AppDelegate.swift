@@ -20,6 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     return true
   }
+  
+  
+  
+  
+  func applicationWillTerminate(_ application: UIApplication) {
+    print(#function)
+  }
+  
+  
+  
+  
+  
+  
+  
+  
 
   // MARK: UISceneSession Lifecycle
 

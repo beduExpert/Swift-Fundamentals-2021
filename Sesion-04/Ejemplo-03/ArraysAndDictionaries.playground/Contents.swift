@@ -5,10 +5,10 @@ names.sort()
 names.first
 names.last
 names.insert("luis", at: 3)
-names.contains("aloooz")
+names.contains("dog")
 names.append("dan")
 names += ["eli"]
-names[0] = "jeje"
+names[0] = "luis"
 print(names) //"["jose", "richo", "roberto", "luis", "violeta", "dan", "eli"]
 
 // prefix returns the required number of elements from the front of the array

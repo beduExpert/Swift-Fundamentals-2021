@@ -3,6 +3,10 @@
 
 ## Variables y Tipos de datos en Swift 
 
+### INTRODUCCIÓN
+
+El conocimiento y apropiado manejo de las variables y los tipos de datos incluídos en Swift, es de vital importancia para cualquier programador iOS pues de ello depende que nuestras app funcionen correctamente sin generar problemas de manejo de memoria.
+
 ### OBJETIVOS 
 
 - Mediante el uso de playgrounds probar la sintáxis con diferentes problemas. Se aprenderán las diferentes variantes de Variables y tipos de datos.
@@ -28,27 +32,21 @@
 - Tuplas.
 
 	- [Ejemplo 03](Ejemplo-03)
-	- [Ejemplo 04](Ejemplo-04)
-	- [Reto 03](Reto-03)
-	- [Reto 04](Reto-04)
+	
+-  Collections: Arrays, Sets y Diccionarios.
 
-- Collections: Arrays, Sets y Diccionarios.
-
-	- [Ejemplo 05](Ejemplo-05)
-	- [Reto 05](Reto-05)
+  - [Ejemplo 04](Ejemplo-04)
+  - [Reto 03](Reto-03)
 
 - Operaciones con Collections.
 
-	- [Ejemplo 06](Ejemplo-06)
-	- [Reto 06](Reto-06)
+	- [Ejemplo 05](Ejemplo-05)
+	- [Reto 04](Reto-04)
 
-- Colores en una App.
-
-	-[Assets y Colores en una App](Ejemplo-07)
 
 ### Postwork:
 
-- [App Mapas con ruta](Postwork)
+- [Postwork](Postwork)
 
 Consultar con los sig. playgrounds, estudiar la implementación del código mostrado:
 
@@ -60,11 +58,8 @@ Consultar con los sig. playgrounds, estudiar la implementación del código most
 
 [The Basics](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
 
-[Basic Operations](https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html)
-
 [Strings and Characters](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html)
 
 [Collection Types](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html)
-
 
 

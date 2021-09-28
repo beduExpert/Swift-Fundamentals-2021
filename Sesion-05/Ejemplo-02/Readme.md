@@ -4,6 +4,10 @@
 
 ## Tipos de datos
 
+### INTRODUCCIÓN
+
+Entender las diferencias entre los tipos de datos disponibles en cualquier lenguaje de programación es fundamental para que la memoria disponible en el programa, sea empleda de la mejor manera. Por ejemplo, podemos optimizar el uso de la memoria si para guardar números sabemos como determinar si el tipo que más nos conviene es un Int o un Double.
+
 ### OBJETIVO
 
 - Las variables y constantes necesitan guardar información, sin embargo esta información es de muchos tipos. En este tema se aprenderán los diferentes tipos de datos disponibles en Swift.
@@ -25,7 +29,7 @@ Un tipo de dato puede ir desde un número Entero hasta un Tipo de dato creado po
 	- **String**, cadena de caracteres, tratada internamente con una matriz (array) de ellos.
 
 
-Ahora bien, crearemos en el Playground una variable con los tipos de datos mencionados.
+Ahora bien, crearemos en el Playground una variable con cada uno de los tipos de datos mencionados.
 
 ```
 let numberOfApples: Int = 100
@@ -45,7 +49,7 @@ var isVisible = true
 let dog = "Perro"
 ```
 
-Tip: Posicionar el cursor sobre el nombre de la variable, y presiona la tecla `option-alt` y da click. Aparecerá una *pop-up* que indicará que tipo de dato *infiere* Swift.
+Tip: Posicionar el cursor sobre el nombre de la variable, y presiona la tecla `option-alt` y da click. Aparecerá una *pop-up* que indicará que tipo de dato *infiere* Swift. Observa que si no se especifica el tipo, una variable que contenga un número con parte decimal, siempre se considera Double.
 
 ![](1.png)
 

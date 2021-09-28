@@ -1,8 +1,12 @@
 
-`Desarrollo Mobile` > `Swift Fundamentals`
+Desarrollo Mobile` > `Swift Fundamentals`
 
 
 ## Variables y Constantes
+
+### INTRODUCCIÓN
+
+Las variables y constantes son fundamentales en cualquier lenguaje de programación y Swift no es la excepción. Si tienes algun conocimiento previo en otro lenguaje encontrarás muchas similitudes que te serán útiles para entender la forma en que se manejan las variables.
 
 ### OBJETIVO
 
@@ -10,15 +14,18 @@
 
 #### REQUISITOS
 
-1. Lectura previa de la Sesion 4.
+1. Lectura del prework de la Sesion 4.
 
 #### DESARROLLO
 
 1.- Abrir Xcode, y crear un nuevo Playground.
 
-Seleccionar `Get started with a playground` > Elegir `Blank` > Y `especificar un Nombre` > `Finalizar`.
+Seleccionar `File` > Elegir `New` >`Playground`  Y `especificar un Nombre` > `Finalizar`.
 
 ![](1.png)
+
+
+
 ![](2.png)
 ![](3.png)
 
@@ -81,7 +88,6 @@ var areaTriangulo = (base * altura)/2
 #### Ultimo pero no menos importante
 
 Al no especificar el tipo de dato Swift necesita "sugerir" o formalmente dicho *inferir* que tipo de dato se esta usando, por ello si se desea crear un proyecto con buen código es mejor especificar el tipo de dato.
-
 
 
 

@@ -45,4 +45,3 @@ let b: Double = 3.1416
 	print(suma)
 	<p>Comparar resultados con el Playground en esta carpeta.</p>
 </details> 
-

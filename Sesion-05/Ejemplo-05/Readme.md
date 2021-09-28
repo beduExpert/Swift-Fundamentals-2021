@@ -2,41 +2,49 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 	
-## Collections: Arrays, Sets y Diccionarios.
+## Operaciones con Collections
 
 ### OBJETIVO 
 
-- Aprender el uso de los diferentes tipos de collections en Swift.
+- Aprender las diferentes funciones de collections en Swift.
+- Utilizar las operaciones: `append()`, `remove()`, `removeLast()`, `popLast()`, `reverse()`, `first`, `last`, `count`, `isEmpty`.
 
 #### REQUISITOS 
 
-1. Xcode instalado.
+1. Xcode instalado. 
 
 #### DESARROLLO
 
-1.- Crear un nuevo Playground en Xcode.
+1.- Crearemos un playground en donde implementaremos el código.
 
-2.- Declarar los tipos de datos, Array, Sets y Dictionaries de manera Implicita y Explicita.
-
-Para un array vacio:
+2.- Declararemos arrays de diferentes maneras, explícita e implicitamente, tambien con valores de inicio.
 
 ```
-// Implicita
-var someArray: [Int] = []
+let array: [Int] = []
+let array2: Array<Int> = [] // long form annotation
+let array3 = [Int]()        // initializer
 
-// Explicita
-var dogNames: Array<String> = [String]()
+// Explicitly declaration with contents
+var instructors: [String] = ["Ricardo", "Juan", "David", "Ismael"]
+let primes: [Int] = [1, 2, 3, 5, 7, 11]
+let sqrts: [Double] = [1, 1.414, 1.732, 2.236, 2.646, 3.317]
 
 ```
 
-Declarar Arrays, Sets y Dictionaries con datos iniciales.
+3.- Aplicaremos las diferentes operaciones antes mencionadas. Nos apoyaremos con la función `print()` para visualizar los valores.
 
 ```
-var numbers = [1, 2, 3, 4, 5, 6 , 7, 8, 9]
-var names = ["richo", "violeta", "jose", "roberto"]
+let numberOfItems = instructors.count
+print(numberOfItems)
+
+print(instructors.isEmpty)
+print(instructors.first)
+print(instructors.last)
+
+instructors.append("Violeta")
+print(instructors)
+
 ```
 
-3.- Utilizar las operaciones `append`, `isEmpty`, `insert`, `remove`.
-
-4.- Basarse en el [Playground](ArraysAndDictionaries.playground) final.
+Ver [Playground](OperationsCollections.playground) para comparar resultados.
 

@@ -2,84 +2,85 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 	
-## App de Maps con Rutas
+## Tuplas y Collections
 
 ### OBJETIVO 
 
-- Crear una app de mapas donde se muestra la ruta entre dos puntos, aplicando los conceptos aprendidos en esta unidad.
-
+- Comprender la forma en que el concepto de Tupla se relaciona con los objetos Array y Dictionary.
+- Reforzar concepto de variables y tuplas.
 
 #### REQUISITOS 
 
-1. Basarse en el [Template](Template) proporcionado.
+1. Xcode instalado.
+2. Nos basaremos en lo visto en los Ejemplos 03 y 04.
 
 #### DESARROLLO
 
-El proyecto a desarrollar será una app de Mapas en donde se mostrarán dos puntos de ubicación y la ruta para llegar de un punto a otro.
+1.- Uso de la tuplas:
 
-<img src="0.png" alt="Resultado Final" width="200" height="430"></img>
+Como hemos dicho al principio, lo realmente importante de las tuplas no es cómo funcionen o no, si no las aplicaciones que tienen a través de todo el lenguaje dada su alto nivel de integración en este. Su uso puede facilitarnos la vida, sobre todo si hacemos un uso indirecto de las mismas.
 
-Las coordenadas deberán estar basadas en tuplas.
+Imaginemos que queremos **declarar varias variables a la vez y darles un valor**, como por ejemplo, las coordenadas en un espacio tridimensional `x`, `y` y `z`. Normalmente haríamos:
 
-1.- Agregar dos coordeandas, no muy lejanas como se vio en el Reto-03.
+```
+var x = 20.0
+var y = 30.0
+var z = 10.0
+```
 
-2.- Crear dos variables de tipo CLLocationCoordinate2D
-        
-3.- Crea dos variables de tipo MKPlacemark, cada una de estas variables debe tener como valor el location correspondiente.
-    
-4.- Crea dos variables de tipo MKMapItem, estas variables deben tener como valor cada placemark creado.
+Con ayuda de las tuplas, ¿como podemos reducir el código?
 
-5.- Centrar el mapa en una region, MKCoordinateRegion.
-
-6.- Agrega los Annotations (pines) del mapa, utiliza la función addAnnotation,
- ejemplo: 
-
- > addAnnotation(coordinate: locationAngel, name: coordsAngel.name, subtitle: coordsAngel.subtitle)
-
-7.- Crea la ruta, basate en la función `directions()`, para ello necesitaras usar los `MKMapItems`.
-
-
-> directions(source: sourceMapItem, destination: destinationMapItem)
-    
 <details>
         <summary>Solución</summary>
-1.- Agregar dos coordeandas, no muy lejanas como se vio en el Reto-03.
-
-    let coordsAngel: (name: String, subtitle: String, lat: Double, long: Double) =  ("El Ángel", "de la Independencia", 19.426980, -99.167696)
-    let coordsPalace: (name: String, subtitle: String, lat: Double, long: Double) =  ("Palacio", "de Bellas Artes", 19.435352, -99.141055)
-
-2.- Crear dos variables de tipo CLLocationCoordinate2D
-
-    let locationAngel = CLLocationCoordinate2D(latitude: coordsAngel.lat, longitude: coordsAngel.long)
-    let locationPalace = CLLocationCoordinate2D(latitude: coordsPalace.lat, longitude: coordsPalace.long)
-    
-        
-3.- Crea dos variables de tipo MKPlacemark, cada una de estas variables debe tener como valor el location correspondiente.
-
-	let sourcePlacemark = MKPlacemark(coordinate: locationAngel, addressDictionary: nil)
-    let destinationPlacemark = MKPlacemark(coordinate: locationPalace, addressDictionary: nil)
-    
-4.- Crea dos variables de tipo MKMapItem, estas variables deben tener como valor cada placemark creado.
-
-	let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
-    let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
-
-5.- Centrar el mapa en una region, MKCoordinateRegion.
-
-	let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-    let region = MKCoordinateRegion(center: locationAngel, span: span)
-    mapView.setRegion(region, animated: true)
-
-6.- Agrega los Annotations (pines) del mapa, utiliza la función addAnnotation.
-
-	addAnnotation(coordinate: locationAngel, name: coordsAngel.name, subtitle: coordsAngel.subtitle)
-    addAnnotation(coordinate: locationPalace, name: coordsPalace.name, subtitle: coordsPalace.subtitle)
-
-7.- Crea la ruta, basate en la función `directions()`, para ello necesitaras usar los `MKMapItems`.
-
-    directions(source: sourceMapItem, destination: destinationMapItem)
-
-            
+        <p> var (x, y, z) = (20.0, 30.0, 10.0)</p>
 </details>
 
-Ver proyecto [Final](final).
+2.- Usar tuplas para iterar diccionarios:
+
+con un diccionario declarado así:
+
+```
+var dict:[String:Int] = ["valor1": 20, "valor2": 30, "valor3": 40]
+```
+
+Hay dos maneras de recorrerlo **1) deconstruyendo la tupla**  y **2) usando el valor en sí de la propia tupla interna**.  Escribe el código necesario.
+
+<details>
+        <summary>Solución 1</summary>
+        <p> for (valor, indice) in dict {<br>
+    print(valor)<br>
+    print(indice)<br>
+}</p>
+</details>   
+
+<details>
+        <summary>Solución 2</summary>
+        <p> for tupla in dict {<br>
+    print(tupla.0)<br>
+    print(tupla.1)<br>
+}</p>
+</details>
+
+3.- Tuplas y arreglos.
+
+En el prework se comentó sobre el término "arreglos asociativos". En Swift los arreglos no son asociativos, pero podríamos trabajarlos como si lo fueran. Revisa esta referencia de Apple:
+
+[Método Enumerated](https://developer.apple.com/documentation/swift/array/1687832-enumerated)
+
+Ahora, con esta nueva información sobre el tipo Array, considera el siguiente arreglo:
+
+**var** array:[String] = ["S1", "S2", "S3", "S4", "S5", "S6"]
+
+¿Cómo podríamos recorrer este arreglo, utilizando tuplas? 
+
+**Tip:** Revisa el prework, ¿cómo dijímos que se implementaban los arreglos asociativos en Swift?
+
+<details>
+	<summary>Solución</summary>
+  <p> for tupla in array.enumerated() {<br>
+  	print(tupla.0)<br>
+    print(tupla.1)<br>
+  }</p>
+  <b>Claro! con el método enumerated() un Array se "convierte" en un Dictionary donde la llave es el número, o sea, el índice de cada posición, así que la solución es igual que en el punto 2.</b>
+</details> 
+

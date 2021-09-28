@@ -4,6 +4,10 @@
 
 ## Tuplas
 
+### INTRODUCCIÓN
+
+El tipo de dato Tupla es una característica importante de Swift que se utilizará por ejemplo, para poder regresar mas de un valor de una función, lo realmente importante de las tuplas además de entender cómo funcionan es conocer las aplicaciones que tienen a través de todo el lenguaje dado su alto nivel de integración en este. 
+
 ### OBJETIVO
 
 - Aprender el concepto de Tupla y sus usos.

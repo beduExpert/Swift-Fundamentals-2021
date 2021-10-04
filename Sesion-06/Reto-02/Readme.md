@@ -1,59 +1,86 @@
- 
 
 `Desarrollo Mobile` > `Swift Fundamentals`
-	
-## Ejercicios con Incrementos y Decrementos 
+
+## Lógica Booleana aplicado a Strings 
 
 ### OBJETIVO 
 
-- Reforzar el concepto de incremento y decrementos.
+- Aplicar operadores de comparación en Strings.
 
 #### REQUISITOS 
 
-1. Playgrounds. Haber concluido el ejemplo 02. 
+1. Xcode y Playgrounds.
 
 #### DESARROLLO
 
-1.- Inicializa una variable entera con valor 0.
+1.- Declara una variable que tenga un String como valor.
 
-2.- A esta variable entera incrementala por 1, pero no uses notación *shorthand*.
+2.- Declara otra variable String con un texto distinto.
 
-3.- A esta variable entera decrementala por 5, pero no uses notación *shorthand*.
+3.- Aplica los Operadores de Comparación `<,>,==,!=,etc...`y asignalos a una variable.
 
-4.- A esta variable entera incrementala por 10, pero ahora SI usa notación *shorthand*.
+4.- Decalra dos variables tipo String con Emojis.
 
-5.- A esta variable multiplicala por 40 pero no uses notación *shorthand*.
+5.- Aplica los Operadores de Comparación.
 
-6.- A esta variable multiplicala por 40 pero ahora utilizando notación *shorthand*.
+6.- ¿Cual es la salida de la sig. comparación?
+
+```
+let stringA = "café"
+let stringB = "cafe\u{0301}"
+let equal = stringA == stringB
+```
+
+7.- Crea una Constante que tenga el valor de tu edad. Crea una constante que tenga el valor de la edad de tu amigo. Luego crea una constante llamada `mismaEdad` en donde le asignaras una comparación booleana.
 
 <details>
         <summary>Solución</summary>
+
+<p>1.- Declara una variable que tenga un String como valor.</p>
+
+        let cat = "Cat"
+
+<p>2.- Declara otra variable String con un texto distinto.</p>
+
+        let dog = "Dog"
+
+<p>3.- Aplica los Operadores de Comparación `<,>,==,!=,etc...`y asignalos a una variable.</p>
+
+        let result = cat < dog
         
-1.- Inicializa una variable entera con valor 0.
+        let result = cat > dog
+        
+        let result = cat == dog
+        
+        let result = cat != dog
 
-	var myVariable: Int = 0
+<p>4.- Decalra dos variables tipo String con Emojis.</p>
 
-2.- A esta variable entera incrementala por 1, pero NO uses notación *shorthand*.
+        let happy = 😃
+        
+        let sad = 😢
 
-	myVariable = myVariable + 1
+<p>5.- Aplica los Operadores de Comparación.</p>
 
-3.- A esta variable entera decrementala por 5, pero NO uses notación *shorthand*.
+		 let result = happy < sad
+		 
+	    let result = happy > sad
+	    
+	    let result = happy == sad
+	    
+	    let result = happy != sad
 
-	myVariable = myVariable - 5
+<p>6.- ¿Cual es la salida de la sig. comparación?</p>
 
-4.- A esta variable entera incrementala por 10, pero ahora SI usa notación *shorthand*.
+        El valor de `equal` es `true`.
 
-	myVariable += 10
+<p>7.- Crea una Constante que tenga el valor de tu edad. Crea una constante que tenga el valor de la edad de tu amigo. Luego crea una constante llamada `mismaEdad` en donde le asignaras una comparación booleana.</p>
 
-5.- A esta variable multiplicala por 40 pero NO uses notación *shorthand*.
-
-	myVariable = myVariable * 40
-
-6.- A esta variable multiplicala por 40 pero ahora utilizando notación *shorthand*.
-
-	myVariable *= 40
+		 let miEdad = 28
+		 
+		 let edadAmigo = 30
+		 
+		 let mismaEdad = miEdad < edadAmigo
 
 </details>
-
-
 

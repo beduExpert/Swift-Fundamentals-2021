@@ -1,55 +1,65 @@
-
-
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Conversión de tipo de datos, Type Casting
+## Ejercicios con IF-ELSE 
 
-### OBJETIVO
+### OBJETIVO 
 
-- Aprender a convertir entre diferentes tipos de datos nativos en Swift.
+- Aplicar lo aprendido en esta unidad, enfocandonos a Estructuras de Control
 
-#### REQUISITOS
+#### REQUISITOS 
 
-1. Xcode y Playgrounds.
+1. Playground y haber concluido Ejemplo04
 
 #### DESARROLLO
 
-Basandonos en el Ejemplo-04, realizar las sig. conversiones.
+1.- Resuelva el sig. problema.
 
-```
-let a: Bool = false
-let b: Int = 5
-let c: Float = 93.21
-let d: Double = 3.213213
-let f: String = "3.1416"
-let g: String = "Name"
-```
+Si tu ganas $25 pesos por cada, hasta trabajar 40 hrs y $50 por cada hora extra.
+¿Cuanto ganarás si trabajas 45 hrs?.
+Escriba el código.
 
-1.- Convertir de tipo `String` a `Double`.
+2.- Mediante uso de IF-ELSE verificar si un número es par o impar.
 
-2.- Convertir de tipo `String` a `Int`.
+3.- Mediante el uso de tuplas, verificar si la coordenada en (x,y) es el ángel de la independencia.
 
-3.- Convertir de tipo `Float` a `Double`.
 
-4.- Convertir de tipo `Bool` a `Int`.
 
 <details>
-<summary>Solución</summary>
-<p> Convertir de tipo `String` a `Double`.</p>
-        
-	let result2: Double = Double(f)!
-        
-<p> Convertir de tipo `String` a `Int`.</p>
+        <summary>Solución</summary>
+<p> 1.- Respuesta </p>
 
-	let res: Int = Int("5")!
+```
+var hoursWorked = 45
+var price = 0
+if hoursWorked > 40 {
+let hoursOver40 = hoursWorked - 40 price += hoursOver40 * 50 hoursWorked -= hoursOver40
+}
+price += hoursWorked * 25
+print(price)
+```
+<p> 2.- Mediante uso de IF-ELSE verificar si un número es par o impar. </p>
 
-<p> Convertir de tipo `Float` a `Double `.</p>
+```
+let number = 10
+if number % 2 == 0 {
+  print(" es par ")
+} else {
+  print(" es impar ")
+}
+```
 
-	let r: Double = Double(c)
+<p> 3.- Mediante el uso de tuplas, verificar si la coordenada en (x,y) es el ángel de la independencia.
+ </p>
 
-<p> Convertir de tipo `Bool` a `Int`.</p>
 
-	let r: Int = Int(a) // Error!
+```
+let coordinates: (lat: Double, long: Double) = (19.426980, -99.167696)
+switch coordinates {
+case (19.426980, -99.167696):
+  print("El angel")
+default: // 5
+  print("Somewhere in space")
+}
+```
 
 </details>
-

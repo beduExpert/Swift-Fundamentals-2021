@@ -1,49 +1,108 @@
 
-
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Conversión de tipo de datos, Type Casting
+
+## Estructuras de Control
+## IF-ELSE
+
+### INTRODUCCIÓN
+
+La estructura de bifurcación condicional existe prácticamente en todos los lenguajes de programación, conocida como "estructura if", permite elegir una de dos opciones en una alternativa, dependiendo del resultado obtenido al evaluar la condición. 
 
 ### OBJETIVO
 
-- Aprender a convertir entre diferentes tipos de datos nativos en Swift.
+- Poner en práctica lo aprendido sobre lógica booleana y operadores mediante estructuras de control IF-ELSE.
 
 #### REQUISITOS
 
-1. Xcode y Playgrounds.
+1. Comprender los temas de Operadores, Lógica Booleana, Tipos de datos, variables y constantes.
 
 #### DESARROLLO
 
-Declarar 6 tipos distintos de variables. Bool, Int, Float, Double, String.
+##### THE IF STATEMENT
 
-En algunos casos la conversión no es posible, ya que hay algunos requerimientos adicionales.
+1.- Así como aprendimos a crear variables con operadores relacionales como:
 
-```
-let a: Bool = false
-let b: Int = 5
-let c: Float = 93.21
-let d: Double = 3.213213
-let f: String = "3.1416"
-let g: String = "Name"
-```
+> let result = 5 < 10
 
-2.- Convertir de tipo `Float` a `Int`.
+Es posible crear una estructura que evalue esta condición.
+
+SI esta condición es Verdadera, ejecutamos el código dentro de la estructura.
 
 ```
-let result: Int = Int(c)
+if 5 < 10 {
+	// ejecutamos este código
+}
 ```
 
-3.- Convertir de tipo `Double` a `Float`.
+SI la condición es Falsa, ejecutamos el código en la estructura `else`.
 
 ```
-let result: Float = Float(d)
+if 5 < 10 {
+	// ejecutamos este código
+} else {
+	// ejecutamos este código en caso de que la condición sea falsa.
+}
 ```
 
-4.- Convertir de tipo `Double` a `String`.
+1.- Declarar dos variables con números enteros y compararlos , utilizar IF-ELSE. En el interior de cada uno de ellos usar la función `print()`. Utilizar todos los operadores `>,<,==,!=, <=, >=`.
 
 ```
-let result: String = String(d)
+let num1 = 100
+let num2 = 300
+
+if num1 < num2 {
+	print("num1 es menor que num2")
+} else {
+	print("num1 NO es menor que num2")
+}
 ```
 
+2.- Declarar una variable tipo String con un valor, luego compararlo utilizando un IF-ELSE y una OR.
 
+```
+let animal = "Gato"
+if animal == "Cat" || animal == "Dog" {
+	print("Es Cat o Dog")
+} else {
+	print("No es Cat, ni es Dog")
+}
+```
 
+3.- Uso de ELSE-IF.
+Declarar una variable entera para indicar una hora del dia. Luego una variable tipo String que cambiará de acuerdo a la hora del día especificada.
+
+```
+let hourOfDay = 12
+var timeOfDay: String = "Medio dia"
+if hourOfDay < 6 {
+  timeOfDay = "Madrugada"
+} else if hourOfDay < 12 {
+  timeOfDay = "Mañana"
+} else if hourOfDay < 17 {
+  timeOfDay = "Tarde"
+} else if hourOfDay < 20 {
+  timeOfDay = "Noche"
+} else if hourOfDay < 24 {
+  timeOfDay = "Muy Noche"
+} else {
+  timeOfDay = "Hora invalida"
+}
+print(timeOfDay)
+```
+
+4.- Short circuiting. Evaluar dos condiciones mediante un &&. La primera condición comparará dos números y la segunda dos Strings.
+
+```
+if 1 > 2 && name == "Matt Galloway" {
+	print("se cumplen AMBAS condiciones")
+}
+```
+
+5.- Ahora utilizando ||.
+
+```
+if 1 > 2 || name == "Matt Galloway" {
+	print("se cumple ALGUNA condición")
+}
+```

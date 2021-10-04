@@ -1,57 +1,73 @@
 
+
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Incrementos y Decrementos
+## Lógica Booleana y compuertas
+
+### INTRODUCCIÓN
+
+La lógica booleana es una parte importantísima de la programación en general y en el desarrollo móvil no puede ser diferente. Como programador iOS tendrás que utilizar en infinidad de ocasiones los Operadores
+Lógicos para hacer que tus Aplicaciones puedan funcionar correctamente en cada escenario provocado como resultado de la interacción de los usuarios.
 
 ### OBJETIVO
 
-- Aprender incrementos y decrementos en Swift.
+- Identificar los conceptos de lógica booleana y compuertas. 
 
 #### REQUISITOS
 
-1. Xcode, haber terminado Reto01.
+1. Xcode
+2. Lectura previa de Compuertas Lógicas.
 
 #### DESARROLLO
 
+De acuerdo a la siguiente tabla, observar los valores de salida utlizando la función `print()`.
 
-1.- Crear un nuevo proyecto de `Playground`.
+El valor `0` corresponde a un valor `false` y el `1` a un `true`.
 
-2.- Declarar la sig. variable.
+![](0.png)
 
-```
-var a = 10
-```
+Los operadores a utilizar son:
 
-3.- Aumentarle una unidad. Restarle una unidad.
-Multiplicarla por si misma.
+	- AND: &&
+	- OR: ||
+	- NOT: !
 
-```
-var a = 10
-a = a + 1
-a = a - 1
-a = a * a
-```
-
-4.- Ahora utilizar incrementos y decrementos. Declara una nueva variable.
+1.- En un Playground escribir una variable que utilice estos operadores, ejemplo:
 
 ```
-var b = 10
-b += 10 // += suma y asigna
-b -= 10 // -= resta y asigna
-b *= 10 // *= multiplica y asigna
+let result = 1 < 2 && 4 > 3
+// resultado deberia ser True ya que ambos se cumplen.
 ```
 
-5.- Prueba diferentes combianciones de incrementos.
+2.- Probar con la otra compuerta, OR.
 
 ```
-var counter: Int = 1
-counter += 1
-counter += 1
-counter -= 1
-counter -= 1
-counter *= 3
-counter *= 3
-counter /= 2 // /= divide y asigna
+let result = 5 < 2 || 4 > 3
+// resultado deberia ser True ya que alguno se cumple.
 ```
 
+3.- Declarar una variable de tipo `Bool` y utilizar el operador `NOT`.
 
+```
+let boolVar: Bool = true
+let result = !boolVar
+// resultado debe ser opuesto al declarado.
+```
+
+4.- Implementar las compuertas lógicas para cada valor de la tabla AND y OR.
+
+```
+		 // A      B
+let AND = false && false 
+let AND = true && false
+let AND = false && true 
+let AND = true && true 
+```
+
+```
+		 // A      B
+let OR = false || false 
+let OR = true || false
+let OR = false || true 
+let OR = true || true 
+```

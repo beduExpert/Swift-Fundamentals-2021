@@ -2,67 +2,52 @@
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-## Lógica Booleana y compuertas
+## Conversión de tipo de datos, Type Casting
+
+### INTRODUCCIÓN
+
+Como parte del trabajo con operadores y expresiones, en ocasiones puede ser necesario transformar un valor de un tipo de dato en otro, por ejemplo, es muy común tener que convertir un valor numérico con punto decimal del tipo Float al tipo Double para poder realizar una operación con ambos datos. Swift como la mayoría de los lenguajes de programación, soporta el "type casting" o conversión de datos, y en esta sesión aprenderemos como realizarlo.
 
 ### OBJETIVO
 
-- Identificar los conceptos de lógica booleana y compuertas. 
+- Aprender a convertir entre diferentes tipos de datos nativos en Swift.
 
 #### REQUISITOS
 
-1. Xcode
-2. Lectura previa de Compuertas Lógicas.
+1. Xcode y Playgrounds.
 
 #### DESARROLLO
 
-De acuerdo a la siguiente tabla, observar los valores de salida utlizando la función `print()`.
+Declarar 6 tipos distintos de variables. Bool, Int, Float, Double, String.
 
-El valor `0` corresponde a un valor `false` y el `1` a un `true`.
-
-![](0.png)
-
-Los operadores a utilizar son:
-
-	- AND: &&
-	- OR: ||
-	- NOT: !
-
-1.- En un Playground escribir una variable que utilice estos operadores, ejemplo:
+En algunos casos la conversión no es posible, ya que hay algunos requerimientos adicionales.
 
 ```
-let result = 1 < 2 && 4 > 3
-// resultado deberia ser True ya que ambos se cumplen.
+let a: Bool = false
+let b: Int = 5
+let c: Float = 93.21
+let d: Double = 3.213213
+let f: String = "3.1416"
+let g: String = "Name"
 ```
 
-2.- Probar con la otra compuerta, OR.
+2.- Convertir de tipo `Float` a `Int`.
 
 ```
-let result = 5 < 2 || 4 > 3
-// resultado deberia ser True ya que alguno se cumple.
+let result: Int = Int(c)
 ```
 
-3.- Declarar una variable de tipo `Bool` y utilizar el operador `NOT`.
+3.- Convertir de tipo `Double` a `Float`.
 
 ```
-let boolVar: Bool = true
-let result = !boolVar
-// resultado debe ser opuesto al declarado.
+let result: Float = Float(d)
 ```
 
-4.- Implementar las compuertas lógicas para cada valor de la tabla AND y OR.
+4.- Convertir de tipo `Double` a `String`.
 
 ```
-		 // A      B
-let AND = false && false 
-let AND = true && false
-let AND = false && true 
-let AND = true && true 
+let result: String = String(d)
 ```
 
-```
-		 // A      B
-let OR = false || false 
-let OR = true || false
-let OR = false || true 
-let OR = true || true 
-```
+
+

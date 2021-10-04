@@ -5,7 +5,9 @@
 
 ### OBJETIVO
 
-- Implementar los temas de sintaxis basico en el proyecto final.
+
+- Implementar una sintaxis básica de Swift con funciones.
+
 - Conectar elementos de Storyboard con Swift.
 
 
@@ -15,74 +17,62 @@
 
 #### DESARROLLO
  
-Como aprendimos en el ejemplo de funciones, tenemos la siguiente sintaxis:
+Recuerda que todo lo trabajado en tu prework, así como durante la sesión, puede ser aplicado a tu proyecto personal. 
+
+De acuerdo al ejemplo de funciones visto en el Work considera la siguiente sintaxis:
 
 > func function_name(parameters) { }
 
-Claro que hay variantes de esta sintaxis, por ejemplo agregar parametros con valores por defecto como:
+Hay variantes de esta sintaxis, por ejemplo agregar parámetros con valores por defecto como:
 
 > func myNameis(name: String = "Bedu") { }
 
-En esta función, asignamos un parámetro de tipo String, que por defecto tendrá el valor de "Bedu".
+En esta función se asignó un parámetro de tipo String que por defecto tendrá el valor de "Bedu".
 
-Al implementar esta función, podemos usarla como sigue:
+Al implementar esta función es posible usarla de la siguiente forma.
 
 > myNameis(name: "Ricardo")
 
-Bien, en varios proyectos de programación es común el uso de la función `print()`. En este postwork implementaremos una función de tipo print que permita saber que funcion se esta ejecutando del proyecto, es decir, cuando se ejecute la función *viewDidLoad* debemos mostrar en la consola un mensaje como este:
+En varios proyectos de programación es común el uso de la función `print()`. En este Postwork implementaremos una función de tipo print que permite saber qué función del proyecto se está ejecutando, es decir, cuando se ejecute la función *viewDidLoad* debemos mostrar en la consola un mensaje como el de la imagen debajo, y este comportamiento debe repetirse en cada función que declaremos.
 
 ![](1.png)
 
-Y este comportamiento debe repetirse en cada función que declaremos.
+Pista. En Swift existe la siguiente palabra reservada: `#function`. Al usarla, esta retornará el valor de la función en donde se encuentre, y el valor será de tipo String.
 
-Te daré una pista, en Swift existe la siguiente palabra reservada: `#function`. Al usarla, esta retornará el valor de la función en donde se encuentre, el valor será de tipo String.
-
-Por ejemplo: 
+Por ejemplo:
 
 > let name: String = #function
 
-Entonces, ¿que haremos?, implementar una función que permita imprimir en consola el nombre de la función que esta ejecutando.
+**Indicaciones generales:**
 
+El propósito de este Postwork es realizar las modificaciones descritas a continuación al proyecto modular. Asegúrate de contar con los constraints para que las vistas se puedan ver apropiadamente.
 
-**Una vez terminada esa tarea,** procederemos a crear IBActions. Estos son funciones que se conectan directamente con los elementos de UIKit en el Storyboard.
+1. Implementa una función que permita imprimir en consola el nombre de la función que está ejecutando.
 
-Nos dirigimos a nuestro Storyboard y ubicamos el icono de lineas horizontales, damos click sobre este y varias opciones de visualización seran mostradas. Elegimos Assistant.
+2. Procede a crear IBActions con los pasos a continuación. Estas son funciones que se conectan directamente con los elementos de UIKit en el Storyboard, y en este caso será con los UIButtons.
+
+	a) Hay que dirigirse al Storyboard y ubicar el ícono de líneas horizontales, hacer click sobre este y elegir Assistant entre las opciones de visualización desplegadas.
 
 ![](2.png)
 
-
-La vista se mostrará de la sig. manera:
+La vista se mostrará de la siguiente manera:
 
 ![](3.png)
 
-Esta opción de Assitant divide la pantalla entre Storyboard y editor de código. Gracias a esta función podemos conectar elementos de UIKit con Swift.
+Esta opción de Assistant divide la pantalla entre Storyboard y editor de código, y gracias a esta función podemos conectar elementos de UIKit con Swift.
 
-Procedemos a dar un ejemplo, dando click sobre un botón arrastramos a la pantalla de editor de codigo mienras presionamos la tecla `control`. Debe mostrarse una linea azul:
+b) Se hace clic principal + ctrl sobre el botón continue del Storyboard, y manteniendo estos presionados se arrastra el cursor hasta la pantalla de editor de código. Al hacerlo debería mostrarse una línea azul, como en el ejemplo siguiente.
 
 ![](4.gif)
 
-
-Un pop-up emergerá, aqui ingresaremos el nombre de nuestra función. Y finalmente damos click en `connect`.
+c) Un pop-up emergerá y es necesario ingresar el nombre de la función, y finalmente se hace click en `connect`.
 
 ![](5.png)
 
-
-Una función debe aparecer con el nombre que le asignemos y con la palabra `IBAction` al inicio:
+Una función debe aparecer con el nombre que se asignó y con la palabra `IBAction` al inicio.
 
 ![](6.png)
 
-¿Recuerdas la primera tarea?, dentro de esta función agregaremos dicha función para mostrar en consola que función estamos ejecutando.
-
+3. Repite los pasos necesarios para agregar la función IBAction correspondiente al botón sign up.
 
 ![](7.png)
-
-
-1.- Procederemos a realizar la misma acción con ambos TextFields.
-
-2.- Crearemos una función que tenga como parámetro un valor String y de retorno un Booleano. Dentro de esta función compararemos si el valor tiene una longitud mayor a alguna especificada, por ejemplo, si esta longitud es mayor a 10 caracteres.
-
-3.- El resultado de este valor debe mostrarse en consola acompañado de un mensaje de `print()`.
-
-
-
-

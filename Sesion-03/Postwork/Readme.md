@@ -5,29 +5,34 @@
 
 ### OBJETIVO
 
-- Creación de un flujo de navegación mediante Storyboards con el objetivo de reforzar las sesiones e integrar los ejemplos vistos en el proyecto final.
+- Crear un flujo de navegación mediante Storyboards en el proyecto modular.
 
-- Al terminar la creación del flujo de navegación, agregar constraints y personalización.
+- Agregar constraints y aplicar personalización al flujo de navegación.
 
 
 #### DESARROLLO
 
-Comenzamos el Postwork definiendo el resultado esperado. 
+En este Postwork se crearán dos vistas para tu proyecto final, una de Login y la otra de Sign Up.  Ambas vistas serán con elementos del Library de Storyboard y con la función de navegación de una vista a otra mediante push.
 
-Como se puede apreciar en la sig. Imágen, el proyecto consiste en dos vistas, una de LogIn y otra de Sign Up.  
+Recuerda que todo lo trabajado en tu prework, así como durante la sesión, puede ser aplicado a tu proyecto personal. 
 
-Ambas poseen elementos de UIKit y para navegar a la vista de SignUp será por medio del botón en la vista de LogIn, esto por medio de una acción Push.
+**Indicaciones generales:**
 
+El propósito de este Postwork es realizar las modificaciones descritas a continuación para lograr el resultado de vistas y navegación de la imagen. 
 
 ![](1.png)
 
+Comenzamos con la pantalla inicial de Login.
 
-Para la pantalla de Log In, agregaremos un Label en la parte superior a manera de título. Podemos usar este componente como base para alinear las distancias con el siguiente Label que lleva como texto “Enter your email or username”. Los valores de las dimensiones son abiertas al desarrollador, al igual que los colores.
+1. En la pantalla de Login se debe agregar un Label en la parte superior a manera de título. Podemos usar este componente como base para alinear las distancias con el siguiente Label que lleva como texto “Enter your email or username”. Los valores de las dimensiones son abiertas al desarrollador, al igual que los colores.
+
+2. Define los constraints de cada elemento de UI como se muestra en la imagen.
+
+Nota: En Storyboard es muy común caer en redundancias, es decir, agregar constraints innecesarios o duplicar valores. En caso de llegar a duplicar un constraint simplemente se borra haciendo click sobre él y presionando la tecla delete (backspace).
+colores.
 
 ![](2.png)
 
-Nota: En Storyboard es muy común caer en redundancias, es decir, agregar constraints innecesarios o duplicar valores. En caso de llegar a duplicar un constraint, simplemente lo borramos haciendo click sobre él y presionando la tecla delete (backspace).
-
-Por último y no menos importante, para navegar de una vista a otra sugerimos usar el modo modal de Show o Push.
+3. Por último implementa la navegación de una vista a otra. Se sugiere usar el modo modal de Show o Push.
 
 ![](3.png)

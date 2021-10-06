@@ -2,72 +2,95 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## For Loop
+## Estructuras de Control
+## SWITCH-CASE
+
+### INTRODUCCIÓN
+
+La estructura de control Switch (o switch-case en relación a otros lenguajes) es una de las más flexibles en Swift a diferencia de lo que ocurre justamente con otros lenguajes de programación. El principal uso de esta estructura es para reemplazar el anidamiento de if's, pero en Swift podemos utilizarla incluso con valores de texto, lo que representa una gran ayuda para los programadores iOS. 
 
 ### OBJETIVO
 
-- Aprender que es un cíclo y el uso del cíclo For.
+- Poner en práctica lo aprendido sobre lógica booleana y operadores mediante estructuras de control Switch-Case.
 
 #### REQUISITOS
 
-1. Playgrounds. Buena comprensión de la Sesión 6.
+1. Comprender los temas de Operadores, Lógica Booleana, Tipos de datos, variables y constantes.
 
 #### DESARROLLO
 
-1.- Crear un nuevo archivo de Playground y escribir.
+##### THE SWITCH STATEMENT
+
+1.- El Switch te permite ejecutar diferentes porciones de código dependiendo del valor de una variable o constante.
+
+Verificar si el número ingresado es 10.
 
 ```
-let answer1 = true && true
-let answer2 = false || false
-let answer3 = (true && 1 != 2) || (4 > 3 && 100 < 1)
-let answer4 = ((10 / 2) > 3) && ((10 % 2) == 0)
-```
-
-Mostrar la salida de cada variable mediante un `print()`
-
-2.- Crear un rango del 0 al 10.
-
-> let rango = 0...10
-
-3.- Crear un rango del 0 al 9.
-
-> let rango2 = 0..<10
-
-4.- FOR LOOP.
-Crear un For-Loop que muestre los números del 0 al 10 mediante el uso de un `print()`. Utilizar la variable `rango`.
-
-```
-for i in rango {
-  print(i)
+let number = 10
+switch number {
+case 10:
+  	print("Si es 10")
+default:
+	print("No lo es") 
 }
 ```
 
-5.- FOR LOOP.
-Crear un For-Loop que muestre los números del 0 al 9 mediante el uso de un `print()`. Utilizar la variable `rango2`.
+2.- Utilizar una estructura Switch para checar el valor de "Dog".
 
 ```
-for i in rango2 {
-  print(i)
+let string = "Dog"
+switch string {
+case "Cat", "Dog":
+	print("Es perro o gato") 
+default:
+	print("No es perro ni gato") 
 }
 ```
 
-6.- INCREMENTOS. Declarar una variable entera con valor inicial de 0. Mediante un For-Loop incrementar esta variable de 1 en 1 hasta llegar a 50.
+3.- Variantes del Switch.
+Evaluar la hora del dia utilizando Switch Case. En cada caso especificar las horas.
 
 ```
-let count = 50
-var sum = 0
-for i in 1...count {
-  print(i)
-  sum += i
+let hourOfDay = 12
+var timeOfDay: String
+switch hourOfDay {
+case 0, 1, 2, 3, 4, 5:
+  timeOfDay = "Madrugada"
+case 6, 7, 8, 9, 10, 11:
+  timeOfDay = "Mañana"
+  case 12, 13, 14, 15, 16:
+  timeOfDay = "Tarde"
+case 17, 18, 19:
+  timeOfDay = "Noche"
+case 20, 21, 22, 23:
+  timeOfDay = "Muy Noche"
+default:
+  timeOfDay = "Hora no valida"
 }
-print(sum)
+print(timeOfDay)
 ```
 
+4.- Replicar el mismo ejemplo de las Horas pero con Rangos.
 
-
-
-
-
+```
+let hourOfDay = 12
+var timeOfDay: String
+switch hourOfDay {
+case 0...5:
+  timeOfDay = "Madrugada"
+case 6...11:
+  timeOfDay = "Mañana"
+  case 12...16:
+  timeOfDay = "Tarde"
+case 17...19:
+  timeOfDay = "Noche"
+case 20..<24:
+  timeOfDay = "Muy Noche"
+default:
+  timeOfDay = "Hora no valida"
+}
+print(timeOfDay)
+```
 
 
 

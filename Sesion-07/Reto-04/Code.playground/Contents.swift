@@ -1,14 +1,25 @@
 import UIKit
 
 
-let count = 100
-var sum = 0
-for i in 1...count where i % 2 == 0 {
-sum += i
-}
+let array = ["a","b","c","d","e"]
+var index = 0
+repeat {
+  print(array[index])
+  index += 1
+} while (index < array.count)
 
 
-sum = 0
-for i in 1...count where i % 2 == 1 {
-sum += i
-}
+let arrayInts = Array(1...15)
+var index2 = 0
+repeat {
+  print(arrayInts[index2])
+   index2 += 1
+} while(index2 < arrayInts.count)
+
+
+var i = 0
+repeat {
+  let string = String(format: "%c", i+65)
+  print(string)
+  i += 1
+} while(i < 26 )

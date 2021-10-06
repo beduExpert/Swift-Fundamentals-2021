@@ -3,15 +3,15 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 	
-## Práctica con Repeat-While 
+## Práctica con While 
 
 ### OBJETIVO 
 
-- Aplicar el uso de Repeat-While a distintos problemas.
+- Aplicar el uso de While a distintos problemas.
 
 #### REQUISITOS 
 
-1. Playgrounds y buen entendimiento del tema For del Ejemplo03.
+1. Playgrounds y buen entendimiento del tema For del Ejemplo02.
 
 #### DESARROLLO
 
@@ -30,28 +30,27 @@ Ayuda: `String(format: "%c", i+65)`
 
 	let array = ["a","b","c","d","e"]
 	var index = 0
-	repeat {
+	while index < array.count {
 		print(array[index])
-		index += 1
-	} while (index < array.count)
+	}
 
 <p> Respueta 2. </p>
 
+	var index = 0
 	let arrayInts = Array(1...15)
-	var index2 = 0
-	repeat {
-		print(arrayInts[index2])
-		index2 += 1
-	} while(index2 < arrayInts.count)
+	while index < arrayInts.count {
+		print(arrayInts[index])
+		index += 1
+	}
 
 <p> Respuesta 3. </p>
 
 	var i = 0
-	repeat {
-  		let string = String(format: "%c", i+65)
-  		print(string)
-  		i += 1
-	} while(i < 26 )
+		while i < 26 {
+		let string = String(format: "%c", i+65)
+		print(string)
+		i += 1
+	}
 </details>
 
 

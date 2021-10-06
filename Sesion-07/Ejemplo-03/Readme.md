@@ -2,79 +2,80 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## Repeat While
+## Ciclo While
+
+### INTRODUCCIÓN
+
+Para las situaciones en que no sabemos el número preciso de iteraciones que requeriremos, tenemos el ciclo While, que a diferencia del ciclo For no se basa en un contador (o un iterado, mas especificamente) sino en el resultado de una condición booleana.
 
 ### OBJETIVO
 
-- A diferencia de For y While, Repeat-While funciona un poco diferente. En este tema se aprenderá dicha diferencia.
+- Aprender el correcto uso del cíclo While.
+
 
 #### REQUISITOS
 
-1. Entendimiento del cíclo For y While.
+1. Playgrounds. Buena comprensión de la Sesión 6 y del cíclo FOR.
+
 
 #### DESARROLLO
 
-Similar a WHILE-LOOP, REPEAT-WHILE tiene una condición de terminación.
-
-La diferencia radica enque REPEAT-WHILE asegura una repetición, es decir, ejecuta el ciclo y luego verifica la condición.
+WHILE-LOOP
 
 ```
-repeat {
-
-} while (condition)
+while condition {
+   statement(s)
+}
 ```
 
-1.- Crear un REPEAT-WHILE que muestre los números del 0 al 10 mediante el uso de un `print()`.
+1.- Con base a los ejercicios de FOR-LOOP.
+Crear un WHILE-Loop que muestre los números del 0 al 10 mediante el uso de un `print()`.
 
 ```
 var i = 0
-repeat {
+while i <= 10 {
   print(i)
   i += 1
-} while (i <= 10)
-
+}
 ```
 
-2.- Crear un REPEAT-WHILE que muestre los números del 0 al 9 mediante el uso de un `print()`. 
+2.- Crear un WHILE-Loop que muestre los números del 0 al 9 mediante el uso de un `print()`. 
 
 ```
 var i = 0
-repeat {
+while i < 10 {
   print(i)
   i += 1
-} while (i < 10)
+}
 ```
 
-3.- INCREMENTOS. Crear un ciclo REPEAT-WHILE que permita incrementar una variable de uno en uno hasta que llegue a 100 y que solo muestre los **números pares**.
+3.- INCREMENTOS. Crear un ciclo while que permita incrementar una variable de uno en uno hasta que llegue a 20.
 
 ```
-var i = 0
-repeat {
-  if i % 2 == 0 {
-    print(i)
-  }
-  i += 1
-} while (i <= 100)
-```
-
-
-4.- INCREMENTOS. Declarar una variable entera con valor inicial de 0. Mediante un REPEAT-WHILE incrementar esta variable de 5 en 5 hasta llegar a 50.
-
-```
-var i = 0
-repeat {
+var i = 10
+while i <= 20 {
   print(i)
-  i += 5
-} while (i <= 50)
-
+  i += 1
+}
 ```
 
-5.- Crear un ciclo REPEAT-WHILE infinito. NOTA: Terminar la ejecución cerrando el playground.
+
+4.- INCREMENTOS. Declarar una variable entera con valor inicial de 0. Mediante un WHILE-Loop incrementar esta variable de 1 en 1 hasta llegar a 50.
 
 ```
-repeat {
-  print("infinito")
-} while (true)
+var i = 0
+while i <= 50 {
+  print(i)
+  i += 1
+}
+```
+
+5.- Crear un ciclo WHILE infinito. NOTA: Terminar la ejecución cerrando el playground.
+
+```
+while true {
+  print("al infinito")
+}
 ```
 
 

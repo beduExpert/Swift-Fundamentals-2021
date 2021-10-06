@@ -2,41 +2,64 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## App login
+## Control de Flujo
+### Uso de Operadores, incremento, comparación y condicionales.
+
+### INTRODUCCIÓN
+
+En el desarrollo de un app, podemos encontrarnos con distintas situaciones, las cuales puede que no sean posibles de resolverse con un solo tipo de estructura de control, por lo que un buen programador iOS debe ser capaz de elegir el ciclo más apropiado para cada escenario, o incluso combinarlos si es necesario.
 
 ### OBJETIVO
 
-- Con lo aprendido hata el momento implementar una app de Login básica.
+- Hacer uso de los tres cíclos aprendidos durante esta sesión.
 
 #### REQUISITOS
 
-1. Xcode.
+1. Entendimiento del uso de FOR, WHILE Y REPEAT-WHILE.
 
 
 #### DESARROLLO
 
-![](0.png)
+1.- Mostrar utilizando un cíclo FOR los número IMPARES de una secuencia de 100 números.
 
-1.- Crear un nuevo Proyecto de Xcode y recrear el siguiente layout en el Storyboard.
+```
+for i in 0...100 {
+  if i % 2 != 0 {
+    // impares
+    print(i)
+  }
+}
+```
 
-![](1.png)
+2.- Mostrar los números de una secuencia del 0 al 100 **excepto** aquellos que esten dentro **del rango 40 y 60**.
 
-2.- Personalizar el layout a algo parecido a la imagen.
+```
+for i in 0...100 {
+  if i < 40 || i > 60 {
+    print(i)
+  }
+}
+```
 
-![](2.png)
+3.- Crear una secuencia del 0 al 100 pero solo mostrando valores entre 40 y 60.
 
-3.- El Campo de Password lo configuraremos como `Secure Text Entry` para enmascarar el texto.
+```
+for i in 0...100 {
+  if i >= 40 && i <= 60 {
+    print(i)
+  }
+}
+```
 
-![](3.png)
+4.- Crear un ciclo infinito WHILE en donde se incremente una variable de 1 en 1, además esta variable al llegar a 50 debe detener el ciclo.
 
-4.- Agregaremos un Label de error en la parte inferior.
-
-![](4.png)
-
-5.- Finalmente conectamos el ViewController con los objetos de UI.
-
-![](5.png)
-
-6.- El código debe validar si el usuario y password son identicos al registrado, de ser así mostrar en verde el mensaje de éxito y de no serlo mostrar un mensaje de error en rojo.
-
-![](1.gif)
+```
+var i = 0
+while true {
+  if i == 50 {
+    break
+  }
+  print(i)
+  i += 1
+}
+```

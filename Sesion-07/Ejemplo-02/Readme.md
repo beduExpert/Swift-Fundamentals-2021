@@ -2,77 +2,73 @@
 `Desarrollo Mobile` > `Swift Fundamentals`
 
 
-## While Loop
+## Ciclo For
+
+### INTRODUCCIÓN
+
+El ciclo más utilizado en cualquier lenguaje de programación es probablemente el ciclo for, pues nos proporciona una forma rápida y precisa de repetir las instrucciones necesarias para trabajar con colecciones de datos.
 
 ### OBJETIVO
 
-- Aprender el correcto uso del cíclo While.
+- Aprender que es un cíclo y el uso del cíclo For.
 
- 
 #### REQUISITOS
 
-1. Playgrounds. Buena comprensión de la Sesión 6 y del cíclo FOR.
-
+1. Playgrounds. Buena comprensión de la Sesión 6.
 
 #### DESARROLLO
 
-WHILE-LOOP
+1.- Crear un nuevo archivo de Playground y escribir.
 
 ```
-while condition {
-   statement(s)
-}
+let answer1 = true && true
+let answer2 = false || false
+let answer3 = (true && 1 != 2) || (4 > 3 && 100 < 1)
+let answer4 = ((10 / 2) > 3) && ((10 % 2) == 0)
 ```
 
-1.- Con base a los ejercicios de FOR-LOOP.
-Crear un WHILE-Loop que muestre los números del 0 al 10 mediante el uso de un `print()`.
+Mostrar la salida de cada variable mediante un `print()`
+
+2.- Crear un rango del 0 al 10.
+
+> let rango = 0...10
+
+3.- Crear un rango del 0 al 9.
+
+> let rango2 = 0..<10
+
+4.- FOR LOOP.
+Crear un For-Loop que muestre los números del 0 al 10 mediante el uso de un `print()`. Utilizar la variable `rango`.
 
 ```
-var i = 0
-while i <= 10 {
+for i in rango {
   print(i)
-  i += 1
 }
 ```
 
-2.- Crear un WHILE-Loop que muestre los números del 0 al 9 mediante el uso de un `print()`. 
+5.- FOR LOOP.
+Crear un For-Loop que muestre los números del 0 al 9 mediante el uso de un `print()`. Utilizar la variable `rango2`.
 
 ```
-var i = 0
-while i < 10 {
+for i in rango2 {
   print(i)
-  i += 1
 }
 ```
 
-3.- INCREMENTOS. Crear un ciclo while que permita incrementar una variable de uno en uno hasta que llegue a 20.
+6.- INCREMENTOS. Declarar una variable entera con valor inicial de 0. Mediante un For-Loop incrementar esta variable de 1 en 1 hasta llegar a 50.
 
 ```
-var i = 10
-while i <= 20 {
+let count = 50
+var sum = 0
+for i in 1...count {
   print(i)
-  i += 1
+  sum += i
 }
+print(sum)
 ```
 
 
-4.- INCREMENTOS. Declarar una variable entera con valor inicial de 0. Mediante un WHILE-Loop incrementar esta variable de 1 en 1 hasta llegar a 50.
 
-```
-var i = 0
-while i <= 50 {
-  print(i)
-  i += 1
-}
-```
-
-5.- Crear un ciclo WHILE infinito. NOTA: Terminar la ejecución cerrando el playground.
-
-```
-while true {
-  print("al infinito")
-}
-```
 
 
 

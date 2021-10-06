@@ -2,22 +2,16 @@ import UIKit
 
 
 let array = ["a","b","c","d","e"]
-var index = 0
-while index < array.count {
-  print(array[index])
-  index += 1
+for i in array {
+  print(i)
 }
 
-let arrayInts = Array(1...15)
-var index2 = 0
-while index2 < arrayInts.count {
-  print(arrayInts[index2])
-  index2 += 1
+let arrayInts = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+for i in arrayInts {
+  print(i)
 }
 
-var i = 0
-while i < 26 {
+for i in 0..<26 {
   let string = String(format: "%c", i+65)
   print(string)
-  i += 1
 }

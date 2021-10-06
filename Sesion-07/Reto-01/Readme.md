@@ -1,49 +1,80 @@
- 
 
 `Desarrollo Mobile` > `Swift Fundamentals`
 
-	
-## Práctica con For
+## Ejercicios con IF-ELSE y Switch-Case 
 
 ### OBJETIVO 
 
-- Aplicar el uso de For a distintos problemas.
+- Aplicar lo aprendido en esta unidad, enfocandonos a Estructuras de Control Condicionales
 
 #### REQUISITOS 
 
-1. Playgroudns y buen entendimiento del tema For del Ejemplo01.
+1. Playground
 
 #### DESARROLLO
 
-1.- Crea un Array con 5 valores de tipo String. Con un For-Loop mostrar cada valor de este Array.
+1.- Resuelva el sig. problema.
 
-2.- Crea un Array con 15 valores de tipo Int. Con un For-Loop mostrar cada valor de este Array.
+Si tu ganas $25 pesos por cada, hasta trabajar 40 hrs y $50 por cada hora extra.
+¿Cuanto ganarás si trabajas 45 hrs?.
+Escriba el código.
 
-3.- Mediante el uso de For-Loop crear el alfabeto, recuerda que son 26 letras en el alfabeto inglés.
-Ayuda: `String(format: "%c", i+65)`
+2.- Mediante uso de IF-ELSE verificar si un número es par o impar.
+
+3.- Mediante uso de Swich-Case verificar si un número es par o impar.
+
+4.- Mediante el uso de tuplas, verificar si la coordenada en (x,y) es el ángel de la independencia.
+
 
 
 <details>
         <summary>Solución</summary>
-<p> Respueta 1. </p>
+<p> 1.- Respuesta </p>
 
-	let array = ["a","b","c","d","e"]
-	for i in array {
-  		print(i)
-	}
+```
+var hoursWorked = 45
+var price = 0
+if hoursWorked > 40 {
+let hoursOver40 = hoursWorked - 40 price += hoursOver40 * 50 hoursWorked -= hoursOver40
+}
+price += hoursWorked * 25
+print(price)
+```
+<p> 2.- Mediante uso de IF-ELSE verificar si un número es par o impar. </p>
 
-<p> Respueta 2. </p>
+```
+let number = 10
+if number % 2 == 0 {
+  print(" es par ")
+} else {
+  print(" es impar ")
+}
+```
 
-	let arrayInts = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
-	for i in arrayInts {
-		print(i)
-	}
+<p> 3.- Mediante uso de Swich-Case verificar si un número es par o impar. </p>
 
-<p> Respuesta 3. </p>
+```
+let number = 10
+switch number {
+case _ where number % 2 == 0:
+  print(" es par ")
+default:
+  print(" es impar ")
+}
+```
 
-	for i in 0..<26 {
-		let string = String(format: "%c", i+65)
-		print(string)
-	}
+
+<p> 4.- Mediante el uso de tuplas, verificar si la coordenada en (x,y) es el ángel de la independencia.
+ </p>
+
+```
+let coordinates: (lat: Double, long: Double) = (19.426980, -99.167696)
+switch coordinates {
+case (19.426980, -99.167696):
+  print("El angel")
+default: // 5
+  print("Somewhere in space")
+}
+```
+
 </details>
-
